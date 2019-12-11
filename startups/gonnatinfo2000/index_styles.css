@@ -20,5 +20,11 @@ li a{
 
 li a:hover {
     background-color: yellow;
-    color: black
+    color: black;
+    text-decoration: none;
+}
+
+.code_logo {
+    width: 100px;
+    height: 40px;
 }
