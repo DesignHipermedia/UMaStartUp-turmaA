@@ -39,6 +39,7 @@ li a:hover {
 
 .container {
     font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }
 
 body {
@@ -52,6 +53,9 @@ body {
 }
 
 .box {
+    display: flex;   
+    flex-direction: column;
+    align-items: center;   
     border: 1px solid red;
     width: 500px;
     height: 250px;
@@ -60,4 +64,3 @@ body {
 svg {
     width: 100px;
 }
-
