@@ -1,0 +1,45 @@
+.container{
+    display: grid;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 150px 150px 150px;
+
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+
+    width:100vw;
+    height:100vh ;
+    margin: 30px auto;
+    background-color: whitesmoke;
+}
+
+
+.item--1{
+    background-color: teal;
+    display: grid;
+    margin: 100px auto;
+   
+    
+}
+
+.item--2{
+    background-color: teal;
+}
+
+.item--3{
+    background-color: teal;
+}
+
+.item--4{
+    background-color: teal;
+}
+
+.item--5{
+    background-color: teal;
+
+    display: grid;
+    grid-template-rows: repeat(2, 150px) 1fr;
+    grid-template-columns: 150px 150px 150px;
+    
+    
+    margin: 0px auto;
+}
