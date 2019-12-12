@@ -36,3 +36,28 @@ li a:hover {
 .font_nav {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.container {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-around;   
+    flex-direction: row;
+}
+
+.box {
+    border: 1px solid red;
+    width: 500px;
+    height: 250px;
+}
+
+svg {
+    width: 100px;
+}
+
