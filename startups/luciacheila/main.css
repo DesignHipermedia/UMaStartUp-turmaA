@@ -1,0 +1,98 @@
+.container {
+    font-family: arial, helvetica, sans-serif;
+    font-size: 14px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+.slider {
+    display: block;
+    height: 293px;
+    width: 600px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+
+.slider li {
+    list-style: none;
+    position: absolute;
+}
+
+.slider img {
+    margin: auto;
+    height: 450px;
+    width: 300px;
+    vertical-align: center;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider input {
+    display: none;
+}
+
+.slider label {
+    background-color: black;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    z-index: 10;
+}
+
+.slider li:nth-child(1) label {
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+
+.slider li input:checked~img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+footer {
+    background-color: #333;
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    color: black;
+    text-align: center;
+}
