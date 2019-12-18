@@ -6,7 +6,7 @@
     grid-row-gap: 10px;
     grid-column-gap: 20px;
 
-    width: 1000px;
+    width: 1500px;
     margin: 30px auto;
     background: #eee;
 }
@@ -24,14 +24,14 @@
     padding: 100px;
 }
 .header{
-    background-color: red;
+    text-align: center;
+    background-color: black;
     color: #fff;
     font-size: 30px;
     grid-column: 1/-1;
 }
 
 .smallbox1{
-    background-color:  red;
     color: #fff;
     font-size: 30px;
     grid-row: 2;
@@ -70,4 +70,15 @@
     color: #fff;
     font-size: 30px;
     grid-column: 1/-1;
+}
+.banner{
+    background-image: url('banner.png');
+    width: 1500px;
+    height: 90px;
+}
+.imagem1{
+    background-image: url('imagem1.jpg');
+    height: 100%;
+    width: 100%;
+    
 }
