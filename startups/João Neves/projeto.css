@@ -33,6 +33,7 @@
 
 .smallbox1{
     color: #fff;
+    background-color: red;
     font-size: 30px;
     grid-row: 2;
     grid-column: 1/2;
@@ -73,12 +74,12 @@
 }
 .banner{
     background-image: url('banner.png');
-    width: 1500px;
-    height: 90px;
+
+    background-position: center;
 }
 .imagem1{
     background-image: url('imagem1.jpg');
     height: 100%;
     width: 100%;
-    
+    background-position: center;
 }
