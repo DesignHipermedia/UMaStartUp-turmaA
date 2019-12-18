@@ -1,0 +1,19 @@
+.empreendedores {
+    background-color: $color-secondary;
+    grid-column: col-start 7 / full-end;
+}
+.features {
+
+}
+.story{
+    &__pictures {
+        background-color: $color-primary;
+    }
+    &__content {
+        background-color: $color-grey-light-1;
+    }
+}
+.projetos{}
+.gallery{
+    background-color: $color-grey-light-1;
+}
