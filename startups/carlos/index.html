@@ -23,11 +23,10 @@
 
     <div class="cards1">
         <div class="box">
-            <div class="imgBx"><img src="img1.jpg" alt=""></div>
+            <div class="imgBx"><img src="anel10.jpg" alt="" width="280" height="400"></div>
             <div class="content">
-                <h2>Title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus repellendus molestiae dicta
-                    earum nobis.</p>
+                <h2>anel de safira</h2>
+                <p>anel de safira de alta qualidade oh mano!</p>
                 <a href="">+inf0</a>
             </div>
         </div>
@@ -35,8 +34,7 @@
             <div class="imgBx"><img src="img2.jpg" alt=""></div>
             <div class="content">
                 <h2>Title</h2>
-                <p>Consectetur fugiat iure velit sint voluptatem, laudantium illum aut quaerat, fugit nostrum molestias
-                    officia?</p>
+                <p</p>
                 <a href="">+inf0</a>
             </div>
         </div>
@@ -44,7 +42,7 @@
             <div class="imgBx"><img src="img3.jpg" alt=""></div>
             <div class="content">
                 <h2>Title</h2>
-                <p>Aut vitae ratione cumque, enim sequi repudiandae, culpa non totam veniam nulla nostrum facere?</p>
+                <p></p>
                 <a href="">+inf0</a>
             </div>
         </div>
@@ -52,8 +50,7 @@
             <div class="imgBx"><img src="img4.jpg" alt=""></div>
             <div class="content">
                 <h2>Title</h2>
-                <p>Obcaecati deleniti ea laborum nesciunt eligendi, quia dolorum accusantium sequi explicabo, sed,
-                    quisquam maxime!</p>
+                <p></p>
                 <a href="">+inf0</a>
             </div>
         </div>
@@ -61,6 +58,49 @@
 
 
     <style>
+        .cards1 .box .imgBx{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:#000;
+            clip-path:circle(400px at center 100px);
+            transition:0.5s;
+            transition-delay: 0.5s;
+        }
+        .cards1 .box:hover .imgBx{
+            clip-path: circle(80px at center 100px);
+            transition-delay: 0s;
+        }
+        .cards1 .box .content{
+         position:absolute;
+         left:0;
+         bottom:0;
+         width:100%;
+         height:55%;
+         padding:20px;
+         box-sizing:border-box;
+         text-align:center;
+        }
+        .cards1 .box{
+            position: relative;
+            width:280px;
+            height:400px;
+            margin: 20px 0;
+            box-sizing: border-box;
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+            overflow:hidden;
+
+        }
+        .cards1{
+            position:relative;
+            width:1200px;
+            display: flex;
+            justify-content: space-around;
+            margin:20px 0;
+            font-family: consolas;
+        }
         body {
             background-image: url("pic1.jpg");
 
