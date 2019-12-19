@@ -1,9 +1,15 @@
 .container {
     font-family: arial, helvetica, sans-serif;
     font-size: 14px;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #fbfbfa;
+}
+
+.menu {
+    width: 100%;
+    align-items: center;
 }
 
 .menu ul {
@@ -11,7 +17,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: white;
 }
 
 .menu li {
@@ -20,21 +26,21 @@
 
 .menu li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .menu li a:hover {
-    background-color: #111;
+    background-color: #f0f0f0;
 }
 
 .slider {
     display: block;
     height: 293px;
     width: 600px;
-    margin: auto;
+    margin-left: 150px;
     margin-top: 20px;
     position: relative;
 }
@@ -86,13 +92,39 @@
     z-index: 10;
 }
 
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+.infolivro {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+
+.button1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50;
+}
+
+.button1:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
 footer {
-    background-color: #333;
+    background-color: white;
     position: fixed;
     bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    width: 100%;
     color: black;
     text-align: center;
 }
