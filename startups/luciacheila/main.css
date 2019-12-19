@@ -40,7 +40,7 @@
     display: block;
     height: 293px;
     width: 600px;
-    margin: auto;
+    margin-left: 150px;
     margin-top: 20px;
     position: relative;
 }
@@ -104,6 +104,11 @@
     margin: 4px 2px;
 }
 
+.infolivro {
+    margin-left: 50%;
+    margin-top: 20px;
+}
+
 .button1 {
     background-color: white;
     color: black;
@@ -116,12 +121,10 @@
 }
 
 footer {
-    background-color: #333;
+    background-color: white;
     position: fixed;
     bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    width: 100%;
     color: black;
     text-align: center;
 }
