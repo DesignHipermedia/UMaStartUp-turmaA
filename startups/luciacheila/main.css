@@ -9,10 +9,10 @@
 
 .menu {
     width: 100%;
-    align-items: center;
 }
 
 .menu ul {
+    text-align: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -27,9 +27,9 @@
 .menu li a {
     display: block;
     color: black;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    text-align: center;
 }
 
 .menu li a:hover {
@@ -40,7 +40,7 @@
     display: block;
     height: 293px;
     width: 600px;
-    margin: auto;
+    margin-left: 120px;
     margin-top: 20px;
     position: relative;
 }
@@ -92,10 +92,26 @@
     z-index: 10;
 }
 
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.livro {
+    width: 100%;
+    margin-right: -360px;
+    float: left;
+}
+
+.infolivro {
+    width: 300px;
+    float: right;
+}
+
 .button {
     background-color: #4CAF50;
     border: none;
-    color: white;
+    color: #fbfbfa;
     padding: 16px 40px;
     text-align: center;
     text-decoration: none;
@@ -116,12 +132,10 @@
 }
 
 footer {
-    background-color: #333;
+    background-color: white;
     position: fixed;
     bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    width: 100%;
     color: black;
     text-align: center;
 }
