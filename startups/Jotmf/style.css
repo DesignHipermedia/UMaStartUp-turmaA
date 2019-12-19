@@ -1,5 +1,5 @@
 .header{
-    display: grid;
+    display: flex;
     background-color: #2C2F33;
     height: 10vh;
     padding: 0;
@@ -14,32 +14,69 @@
     width: 100vw;
 }
 .nav-b{
-    font-size: 25px;
+    font-size: 17px;
     padding: 20px;
     align-self: center;
     height: auto;
 }
+
 a {
     text-decoration: none;
 }
 .nav-text{
     color: #FFFFFF;
 }
-.nav-text-ativo{
+.ativo{
     color: #7289DA;
 }
 .nav-text:hover{
     color: #7289DA;
 }
 
+
+
 .nav-login{
+    padding: 10px;
     display: flex;
-    font-size: 25px;
+    font-size: 17px;
     align-self: center;
     height: auto;
-    justify-items: flex-end;
+    justify-content: right;
+
 }
+.nav-login .image{
+    padding: 0;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: white solid 2px;
+}
+.nav-login .text{
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+
+.slogan{
+    height: 300px;
+    background-color: #2C2F33;
+    color: white;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slogan .text{
+    padding: 20px;
+}
+
+
+.features{
+    background-color: #7289DA;
+}
+
 body{
+    font-family: Arial;
     margin: 0;
     padding: 0;
 }
