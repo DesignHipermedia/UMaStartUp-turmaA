@@ -1,0 +1,142 @@
+.header{
+    display: flex;
+    background-color: #2C2F33;
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.loading{
+    background-color:#7289DA;
+    height: 10px;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+}
+.nav-b{
+    font-size: 17px;
+    padding: 20px;
+    align-self: center;
+    height: auto;
+}
+a {
+    text-decoration: none;
+}
+.nav-text{
+    color: #FFFFFF;
+}
+.ativo{
+    color: #7289DA;
+}
+.nav-text:hover{
+    color: #7289DA;
+}
+
+
+
+.nav-login{
+    padding: 10px;
+    display: flex;
+    font-size: 17px;
+    align-self: center;
+    height: auto;
+    justify-content: right;
+
+}
+.nav-login .image{
+    padding: 0;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: #99AAB5 solid 2px;
+}
+.nav-login .text{
+    color: #FFFFFF;
+    padding-left: 10px;
+}
+
+@media only screen and (max-width: 30em) {
+    .nav-login {
+     display: none;
+    }
+  }
+footer{
+    background-color: #23272A;
+    height: 15vh;
+    width: 100%;
+}
+body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+.guildlist{
+    display: grid;
+    height: auto;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px,max-content));
+    grid-gap: 80px;
+    padding-bottom: 200px;
+}
+
+.guilds{
+    background-color: #2C2F33;
+}
+
+.guilds .title{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 40px;
+}
+
+.guild{
+    display: inline-grid;
+    justify-self: center;
+    align-content: center;
+    
+}    
+.guild img{
+    width: 70px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+.guild button{
+    width: 200px;
+    height: 30px;
+    justify-self: center;
+    margin: 5px;
+    border:transparent;
+    border-radius: 50px;
+    color: #23272A;
+    font-size: 20px;
+}
+
+.add{
+    background-color: #7289DA;
+}
+.config{
+    background-color: #22ccCB;
+}
+
+.hide{
+    display: none;
+}
+.guild .name{
+    color: white;
+    font-size: 20px;
+}
+.guilds .information{
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-bottom:30px ;
+}
+
