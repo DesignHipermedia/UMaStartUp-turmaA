@@ -1,7 +1,3 @@
-.favicon{
-    background-image: url(images/html_language_intro.png);
-}
-
 .navbar {
     list-style-type: none;
     margin: 0;
@@ -237,6 +233,16 @@ svg {
     padding-bottom: 75px;
 }
 
+.header-unity-firsts {
+    background-image: url(images/unity_firsts.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
 .list {
     text-align: left;
 }
@@ -306,7 +312,7 @@ svg {
 }
 
 .small_header_python {
-    background-image: url(images/python_programming.png);
+    background-image: url(images/python_firsts.png);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -316,7 +322,7 @@ svg {
 }
 
 .small_header_unity {
-    background-image: url(images/unity_programming.png);
+    background-image: url(images/unity_firsts.png);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
