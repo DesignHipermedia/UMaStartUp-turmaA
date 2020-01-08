@@ -9,6 +9,91 @@
     <link rel="shortcut icon" type="image/png" href="Img/bot-avatar.png">
 </head>
 <body>
+    <style>
+        .menus{
+            display: flex;
+        }
+
+      .tab{
+          display: grid;
+          width: 10%;
+          height: auto;
+      }
+
+.tabcontent {
+  display: none;
+  width: 100%;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+#DashBoard{
+    display: block;
+}
+    
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(114,118,125);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(114,137,218);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(114,137,218);
+}
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
     <div class="loading"></div>
     <div class="header">
         <div class="nav">
@@ -31,8 +116,43 @@
         </div>
     </div>
 
+<div class=menus>
+    <div class="tab">
+        <button class="tablinks" onclick="openmenu(event, 'DashBoard')">DashBoard</button>
+        <button class="tablinks" onclick="openmenu(event, 'Modules')">Modules</button>
+    </div>
+    <div id="DashBoard" class="tabcontent">
+        <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label>
+      </div>
+      <div id="Modules" class="tabcontent">
+        <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+        </label>
+      </div>
+</div>
     <footer>
 
+
     </footer>
+
+<script>
+function openmenu(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+</script>
 </body>
 </html>
