@@ -1,4 +1,8 @@
-ul {
+.favicon{
+    background-image: url(images/html_language_intro.png);
+}
+
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -7,11 +11,11 @@ ul {
 
 }
 
-li {   
+.navbar_menu {   
     float: left;
 }
 
-li a{
+.navbar_menu a{
     display: block;
     color: white;
     text-align: center;
@@ -20,7 +24,7 @@ li a{
     height: 40px;
 }
 
-li a:hover {
+.navbar_menu a:hover {
     background-color: white;
     color: black;
     text-decoration: none;
@@ -84,12 +88,17 @@ body {
     padding-top: 35px;
 }
 
-.section:hover {
-    background-color: #262626;
-    color: white;
+.button-dec {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    border: none;
 }
 
-button:hover {
+.button-dec:hover {
     background-color: #3333ff;
     color: white;
     transition: .5s
@@ -100,7 +109,7 @@ svg {
 }
 
 .header1 {
-    background-image: url(image_programming.jpg);
+    background-image: url(images/image_programming.jpg);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -110,7 +119,7 @@ svg {
 }
 
 .header-web {
-    background-image: url(image_programming_2.jpg);
+    background-image: url(images/image_programming_2.jpg);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -120,7 +129,7 @@ svg {
 }
 
 .header-python {
-    background-image: url(python_programming.jpg);
+    background-image: url(images/python_programming.jpg);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -130,7 +139,7 @@ svg {
 }
 
 .header-unity {
-    background-image: url(unity_programming.jpg);
+    background-image: url(images/unity_programming.jpg);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -160,16 +169,6 @@ svg {
     text-shadow: 2px 2px 8px black;
 }
 
-.button-dec {
-    background-color: white;
-    color: wblack;
-    text-decoration: none;
-    width: 100px;
-    height: 50px;
-    margin: 15px;
-    border: none;
-}
-
 .footer-div {
     display: flex;
     justify-content: space-around;   
@@ -196,4 +195,155 @@ svg {
     width: 100px;
     height: 100px;
     border-radius: 100%;
+}
+
+.header-html {
+    background-image: url(images/html_language_intro.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.header-css {
+    background-image: url(images/css_language_intro.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.header-javascript {
+    background-image: url(images/javascript_language_intro.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.header-python-firsts {
+    background-image: url(images/python_firsts.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.list {
+    text-align: left;
+}
+
+.previous-button {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    border: none;
+}
+
+.next-button {
+    background-color: green;
+    color: white;
+    text-decoration: none;
+    width: 100px;
+    height: 50px;
+    margin: 15px;
+    border: none;
+}
+
+.previous-button:hover {
+    background-color: darkgreen;
+}
+
+.next-button:hover {
+    background-color: darkgreen;
+}
+
+.topic_description {
+    text-align: left;
+    width: 100%;
+    padding-left: 0%;
+}
+
+.small_header_html {
+    background-image: url(images/html_language_intro.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.small_header_css {
+    background-image: url(images/css_language_intro.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.small_header_javascript {
+    background-image: url(images/javascript_language_intro.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.small_header_python {
+    background-image: url(images/python_programming.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.small_header_unity {
+    background-image: url(images/unity_programming.png);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+
+.html1_exe1 {
+    width: 35%;
+}
+
+.html1_exe1_2 {
+    width: 50%;
+    border: 1px solid black;
+}
+
+.css1_exe1_1 {
+    width: 35%;
+}
+
+.css1_exe1_2 {
+    width: 25%;
+}
+
+.css1_exe1_3 {
+    width: 40%;
+    border: 1px solid black;
 }
