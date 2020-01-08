@@ -116,7 +116,7 @@ h1 {
 
 /* Caption text */
 .text {
-  color: #00F5FF;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -128,7 +128,7 @@ h1 {
 
 /* Number text (1/2 etc) */
 .numbertext {
-  color: #00F5FF;
+  color: white;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -153,6 +153,8 @@ h1 {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
 
 
 
