@@ -60,14 +60,24 @@ a {
 }
 
 @media only screen and (max-width: 30em) {
-    .nav-login {
+    .nav-text{
+    display: none;
+    }
+    .nav-login .text {
      display: none;
     }
   }
-footer{
+  footer{
     background-color: #23272A;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
+}
+footer {
+    text-align: center;
+    padding-top: 30px;
+    color: #7289DA;
+    font-size: 25px;
+
 }
 body{
     font-family: Arial;
@@ -81,7 +91,7 @@ body{
     width: 100%;
     height: auto;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(300px,max-content));
+    grid-template-columns: repeat(auto-fit, minmax(350px,max-content));
     grid-gap: 80px;
     padding-bottom: 200px;
 }
@@ -146,22 +156,24 @@ body{
 .menus{
     display: flex;
 }
+
 .tab{
     display: grid;
-    grid-template-rows: auto auto auto;
-    grid-gap: 0px;
+    font-size: 10px;
+    grid-template-rows: 250px 50px 50px 50px ;
     background-color: #2C2F33;
-    width: 10%;
-    height: 100vh;
+    width: 250px;
+    height: auto;
 }
 
 .tab button{
     background-color: #2C2F33;
     border: none;
     width: auto;
+    font-size: 15px;
     height: 50px;
     color: white;
-    outline:none
+    outline:none;
 }
 
 .tab button:hover{
@@ -175,7 +187,9 @@ background-color: #2C2F33;
   width: 100%;
   padding: 6px 12px;
   border: none;
+  padding-bottom: 600px;
 }
+
 #DashBoard{
     display: block;
 }
@@ -220,6 +234,7 @@ background-color: #2C2F33;
   transition: .4s;
 }
 
+
 input:checked + .slider {
   background-color: rgb(114,137,218);
 }
@@ -241,4 +256,80 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+
+form .form{
+    font-size: 16px;
+    width: 30%;
+    height: 25px;
+    border: none;
+    background-color:#2C2F33 ;
+    color: rgb(114,118,125);
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    outline:none;
+    padding: 5px 5px 5px 10px;
+}
+
+
+form label{
+    color: white;
+    font-size: 20px;
+    height: 25px;
+    border: none;
+}
+form .button{
+    height: 25px;
+    width: auto;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: lightcoral;
+}
+form .button:hover{
+    transform: scale(1.2);
+}
+
+form .timezones{
+    font-size: 16px;
+    width: 30%;
+    height: auto;
+    border: none;
+    background-color:#2C2F33 ;
+    color: rgb(114,118,125);
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    outline:none;
+    padding: 5px 5px 5px 10px;
+}
+form .timezones *{
+ color: white;
+ border-radius: 50%;
+}
+form .timezones option{
+    outline: none;
+    border-radius: 10px;
+}
+.tab .guildinfo{
+    display: grid;
+    justify-content: center;
+}
+.tab .guildinfo .image img{
+    border-radius: 50%;
+    border: 2px solid rgb(114,118,125);
+    width: 100px;
+}
+.tab .guildinfo .name{
+    color: #7289DA;
+    font-weight: bold;
+    font-size: 35px;
+}
+.tab .guildinfo .users{
+    color: #22ccCB;
+    font-size: 15px;
+    padding-bottom: 40px;
+}
+.text{
+    display: inli;
 }

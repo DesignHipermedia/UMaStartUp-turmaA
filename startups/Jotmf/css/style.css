@@ -179,6 +179,12 @@ a {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+.features .info{
+    color: #99AAB5;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 50px;
+}
 .features .container{
     width: 100%;
     display: grid;
@@ -188,28 +194,34 @@ a {
 }
 
 .box{
+    background-color: white;
+    padding: 5px;
+    border-radius: 15px;
     width: 300px;
     height: 200px;
     text-align: center;
 }
 .box-title{
+    color: #7289DA;
     text-align: center;
-    font-size: 25px;
+    margin: 10px;
+    font-size: 30px;
     padding-bottom: 20px;
 }
 footer{
     background-color: #23272A;
-    height: 15vh;
+    height: 10vh;
     width: 100%;
 }
-footer li{
-    list-style: none;
+footer {
+    text-align: center;
+    padding-top: 30px;
+    color: #7289DA;
+    font-size: 25px;
 
 }
-footer a{
-    list-style: none;
-    padding-left: 50px;
-}
+
+
 body{
     font-family: Arial;
     margin: 0;
