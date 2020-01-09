@@ -11,28 +11,81 @@
 <body>
 
     startup <div class="container">
-        <div class="item item--1 botao" id="anim1">
-            <a href="index.html">HOME</a></div>
+        <a href="index.html" class="a"><div class="item item--1 botao" id="anim1">
+            HOME</div> </a>
+
+         <a href="index.html" class="a">   
         <div class="item item--2 botao2" id="anim2">
-            <a href="index.html">DIAMANTES</a></div>
+            SAFIRA</div> </a>
+        
+        <a href="index.html" class="a">   
         <div class="item item--3 botao3" id="anim1">
-            <a href="index.html">RUBYS</a></div>
+            RUBYS</div> </a>
+        
+        <a href="index.html" class="a"> 
         <div class="item item--4 botao4" id="anim2">
-            <a href="index.html">ESMERALDAS</a></div>
-        <div class="item item--5 botao5" id="anim1">
-            <a href="index.html">OURO</a></div>
+        ESMERALDAS</div></a>
+        
+        <a href="index.html" class="a"> 
+        <div class="item item--5 botao5" id="anim1"> 
+        OURO</div></a>
+
+        <a href="index.html" class="a"> 
         <div class="item item--6 botao6" id="anim2">
-            <a href="index.html">SAFIRA</a></div>
+        SAFIRA</div></a>
+
     </div>
 
     <!-- <img src="pic1.jpg" alt="Smiley face" height="720" width="1920"> -->
+    <div class="cards1">
+        <div class="box">
+            <div class="imgBx"><img src="anel4.jpg" alt="" width="280" height="400"></div>
+            <div class="content">
+                <h2>anel de diamante</h2>
+                <p>anel de diamante de alta qualidade oh man e prestigio!</p>
+                <a href="websitepage3.html">1000€</a>
+            </div>
+        </div>
 
+    </div>
+
+    <section id="flex">
+        <div class="estilo">Anel de diamante feito na amadora de alta qualidade exclusivo da nossa loja
+
+        </div>
+        
+
+    </section>
+    <section id="flex">
+        <div class="estilo">
+            Caractreristicas: 10 carats.
+            <p></p>
+            Certeficado GIA.
+            <p></p>
+            Brilho- explendido.
+        </div>
 
 
 
     <style>
+        .estilo{
+            font-family: sans-serif;
+            color: darkslategray;
+        }
+        #flex{
+            margin:50px;
+            margin-right: 45px;
+            padding:50px;
+            
+            background-color: rgba(204,204,204,0.4);
+            border:solid 5px #ccc;
+        }
+        #flex div{
+            display:inline-block;
+            width:50%;
+        }
         .cards1 .box .imgBx{
-            position:absolute;
+            position:relative;
             top:0;
             left:0;
             width:100%;
@@ -60,7 +113,7 @@
             position: relative;
             width:280px;
             height:400px;
-            margin: 20px 0;
+            margin: 10px;
             box-sizing: border-box;
             box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
             overflow:hidden;
@@ -78,7 +131,11 @@
             background-image: url("pic1.jpg");
 
         }
-
+        .a{
+            text-decoration: none;
+            color: blueviolet;
+           
+        }
         .container {
             display: grid;
             grid-template-rows: 20px 20px;
@@ -95,10 +152,10 @@
             width: 220px;
             height: 40px;
             margin: 0px;
-            background-color: red;
+            background-color: grey;
             border: none;
-            color: blueviolet;
-
+            /* color: grey; */
+           
             cursor: pointer;
         }
 
@@ -106,9 +163,9 @@
             width: 220px;
             height: 40px;
             margin: 0px;
-            background-color: blue;
+            background-color: grey;
             border: none;
-            color: red;
+             
             cursor: pointer;
         }
 
@@ -118,7 +175,7 @@
             margin: 0px;
             background-color: grey;
             border: none;
-            color: blue;
+             /* color: red;  */
             cursor: pointer;
         }
 
@@ -126,9 +183,9 @@
             width: 220px;
             height: 40px;
             margin: 0px;
-            background-color: black;
+            background-color: grey;
             border: none;
-            color: blue;
+            /* color: grey; */
             cursor: pointer;
         }
 
@@ -136,9 +193,9 @@
             width: 220px;
             height: 40px;
             margin: 0px;
-            background-color: purple;
+            background-color: grey;
             border: none;
-            color: green;
+            /* color: grey; */
             cursor: pointer;
         }
 
@@ -146,9 +203,9 @@
             width: 220px;
             height: 40px;
             margin: 0px;
-            background-color: pink;
+            background-color: grey;
             border: none;
-            color: grey;
+            /* color: grey; */
             cursor: pointer;
         }
 
