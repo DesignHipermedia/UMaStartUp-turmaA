@@ -134,8 +134,8 @@ svg {
     padding-bottom: 150px;
 }
 
-.header-unity {
-    background-image: url(images/unity_programming.jpg);
+.header-c {
+    background-image: url(images/c_programming.png);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -233,8 +233,8 @@ svg {
     padding-bottom: 75px;
 }
 
-.header-unity-firsts {
-    background-image: url(images/unity_firsts.png);
+.header-c-firsts {
+    background-image: url(images/c_firsts.png);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -321,8 +321,8 @@ svg {
     padding-bottom: 45px;
 }
 
-.small_header_unity {
-    background-image: url(images/unity_firsts.png);
+.small_header_c {
+    background-image: url(images/c_firsts.png);
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     color: white;
@@ -352,4 +352,26 @@ svg {
 .css1_exe1_3 {
     width: 40%;
     border: 1px solid black;
+}
+
+.javascript1_exe_1 {
+    width: 75%;
+}
+
+.javascript1_exe_2 {
+    width: 40%;
+    border: 1px solid black;
+}
+
+.javascript1_exe_3 {
+    width: 40%;
+    border: 1px solid black;
+}
+
+.python1_exe_1 {
+    width: 20%;
+}
+
+.python1_exe_2 {
+    width: 40%;
 }
