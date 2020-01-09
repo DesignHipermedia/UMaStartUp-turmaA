@@ -63,57 +63,7 @@ h1 {
 	
 }
 
-.tabeladeprecos{
-	display: grid;
-	margin: auto;
-	margin-top: -50px;
-	font-size: 25px;
-	text-align: justify;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(450px,max-content));
-    grid-gap: 80px;
-    padding-bottom: 200px;
-}
-
-.title{
-	font-family: Arial, Helvetica, sans-serif;
-	overflow-x: hidden;
-	background-color: thistle;
-}
-
-
-.title .tabeladeprecos{
-    color: white;
-    font-size: 30px;
-    text-align: center;
-    padding: 40px;
-}
-
-.tabela{
-    display: inline-grid;
-    justify-self: center;
-    align-content: center;
-    
-}    
-.tabela img{
-    width: 100%;
-	margin-bottom: 20px;
-	align-items: center;
-}
 
 
 
-.tabelas {
-	text-align: center;
-}
-
-
-.tabeladeprecostext {
-	width: 70%;
-	  margin: auto;
-	  margin-top: -50px;
-	  font-size: 25px;
-	  text-align: justify;
-  }
+   

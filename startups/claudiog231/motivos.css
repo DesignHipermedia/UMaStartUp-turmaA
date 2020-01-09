@@ -63,10 +63,15 @@ h1 {
 	
 }
 
-.tabeladeprecos{
+.motivosparacompra {
+	width: 70%;
+
+}
+
+.motivosparacompra{
 	display: grid;
 	margin: auto;
-	margin-top: -50px;
+	margin-top: -16px;
 	font-size: 25px;
 	text-align: justify;
     width: 100%;
@@ -84,14 +89,14 @@ h1 {
 }
 
 
-.title .tabeladeprecos{
+.title .motivosparacompra{
     color: white;
     font-size: 30px;
     text-align: center;
     padding: 40px;
 }
 
-.tabela{
+.motivo{
     display: inline-grid;
     justify-self: center;
     align-content: center;
@@ -105,15 +110,6 @@ h1 {
 
 
 
-.tabelas {
+.motivostext {
 	text-align: center;
 }
-
-
-.tabeladeprecostext {
-	width: 70%;
-	  margin: auto;
-	  margin-top: -50px;
-	  font-size: 25px;
-	  text-align: justify;
-  }
