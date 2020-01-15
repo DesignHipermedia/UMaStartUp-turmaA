@@ -176,10 +176,6 @@ body{
     outline:none;
 }
 
-.tab button:hover{
-    background-color: #2B2B33;
-    cursor: pointer;
-}
 
 .tabcontent {
 background-color: #2C2F33;
@@ -332,4 +328,23 @@ form .timezones option{
 }
 .text{
     display: inli;
+}
+
+.tab .guildinfo .type{
+    display: none;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+.tab .guildinfo .active{
+    display: block;
+}
+
+.tab button .active{
+    color: black;
+}
+
+.tab button:hover{
+    background-color: #2B2B33;
+    cursor: pointer;
 }
