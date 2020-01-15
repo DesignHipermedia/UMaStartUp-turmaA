@@ -3,7 +3,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	overflow-x: hidden;
-	background-color: thistle;
+	background-color: #d8bfd8;
 }
 .nav {
 	height: 100%;
@@ -85,10 +85,6 @@ ul {
     list-style-type: none;
 }
 
-a {
-    color: #e95846;
-    text-decoration: none;
-}
 
 .pricing-table-title {
     text-transform: uppercase;
@@ -142,7 +138,7 @@ a {
 
 .pricing-title {
     color: #FFF;
-    background: #e95846;
+    background: #846075;
     padding: 20px 0;
     font-size: 2em;
     text-transform: uppercase;
@@ -150,15 +146,15 @@ a {
 }
 
 .pricing-table.recommended .pricing-title {
-    background: #2db3cb;
+    background: #846075;
 }
 
 .pricing-table.recommended .pricing-action {
-    background: #2db3cb;
+    background: #846075;
 }
 
 .pricing-table .price {
-    background: #403e3d;
+    background: #A491D3;
     font-size: 3.4em;
     font-weight: 700;
     padding: 20px 0;
@@ -172,7 +168,7 @@ a {
 }
 
 .table-list {
-    background: #FFF;
+    background: #A491D3;
     color: #403d3a;
 }
 
@@ -180,12 +176,13 @@ a {
     font-size: 1.4em;
     font-weight: 700;
     padding: 12px 8px;
+    
 }
 
 
 
 .table-buy {
-    background: #FFF;
+    background: #A491D3;
     padding: 15px;
     text-align: left;
     overflow: hidden;
@@ -207,7 +204,7 @@ a {
 .table-buy .pricing-action {
     float: right;
     color: #FFF;
-    background: #e95846;
+    background: #846075;
     padding: 10px 16px;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -221,11 +218,11 @@ a {
 }
 
 .table-buy .pricing-action:hover {
-    background: #cf4f3e;
+    background: #353B3C;
 }
 
 .recommended .table-buy .pricing-action:hover {
-    background: #228799;    
+    background: #353B3C;    
 }
 
 /** ================
