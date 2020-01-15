@@ -1,5 +1,0 @@
-print(2 + 4)
-print(7 * 5)
-print(12 % 7)
-print(8-2 == 6)
-print(24/4 != 6)

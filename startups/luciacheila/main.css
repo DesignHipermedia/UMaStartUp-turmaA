@@ -1,14 +1,18 @@
 .container {
-    font-family: arial, helvetica, sans-serif;
-    font-size: 14px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fbfbfa;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    grid-column-gap: 20px;
+    width: 90%;
+    margin: 10px auto;
+    background-color: #eee;
 }
 
-.menu {
-    width: 100%;
+.header {
+    height: 50px;
+    grid-row: 1/span 4;
+    grid-column: 1/span 4;
 }
 
 .menu ul {
@@ -36,76 +40,20 @@
     background-color: #f0f0f0;
 }
 
-.slider {
-    display: block;
-    height: 293px;
-    width: 600px;
-    margin-left: 120px;
-    margin-top: 20px;
-    position: relative;
-}
-
-.slider li {
-    list-style: none;
-    position: absolute;
-}
-
-.slider img {
-    margin: auto;
-    height: 450px;
-    width: 300px;
-    vertical-align: center;
-    opacity: 0;
-    visibility: hidden;
-}
-
-.slider input {
-    display: none;
-}
-
-.slider label {
-    background-color: black;
-    bottom: 10px;
-    cursor: pointer;
-    display: block;
-    height: 10px;
-    position: absolute;
-    width: 10px;
-    z-index: 10;
-}
-
-.slider li:nth-child(1) label {
-    left: 10px;
-}
-
-.slider li:nth-child(2) label {
-    left: 40px;
-}
-
-.slider li:nth-child(3) label {
-    left: 70px;
-}
-
-.slider li input:checked~img {
-    opacity: 1;
-    visibility: visible;
-    z-index: 10;
-}
-
-.conteudo {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
 .livro {
-    width: 100%;
-    margin-right: -360px;
-    float: left;
+    grid-column: 1/span 2;
+    grid-row: 5/span 15;
+}
+
+#livro {
+    width: 400px;
+    height: 500px;
+    margin-left: 90px;
 }
 
 .infolivro {
-    width: 300px;
-    float: right;
+    grid-column: 3/span 2;
+    grid-row: 5/span 15;
 }
 
 .button {
@@ -131,11 +79,79 @@
     color: white;
 }
 
-footer {
+.mapa {
+    grid-column: 1/span 2;
+}
+
+.contatos {
+    grid-column: 3/span 2;
+}
+
+.galeria {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.galeria_img {
+    width: 300px;
+    height: 300px;
+    margin: 25px;
+}
+
+.galeria__item {
+    margin: 0%;
+}
+
+.galeria__item--1 {
+    grid-column: 1/span 2;
+    grid-row: 1;
+}
+
+.galeria__item--2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.galeria__item--3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.galeria__item--4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.galeria__item--5 {
+    grid-column: 2;
+    grid-row-start: 2;
+}
+
+.galeria__item--6 {
+    grid-column-start: 3;
+    grid-row: 2;
+}
+
+.galeria__item--7 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.galeria__item--8 {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.galeria__item--9 {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.footer {
+    grid-column: 1/span 4;
+    height: 50px;
     background-color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     color: black;
     text-align: center;
 }

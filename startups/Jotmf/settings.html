@@ -16,13 +16,15 @@
                 <a href="index.html" class="nav-text">Inicio</a>
             </div>
             <div class="nav-b">
-                <a href="sobre.html" class="nav-text">Sobre</a>
-            </div>
+              <a href="sobre.html" class="nav-text">Get Premium</a>
+          </div>
             <div class="nav-b">
                 <a href="dashboard.html" class="nav-text ativo">DashBoard</a>
             </div>
+            <div class="nav-b">
+              <a href="guildpubliclist.html" class="nav-text">Public Guild List</a>
+          </div>
         </div>
-
         <div class="nav-login">
             <img src="Img/Avatar.jpg" class="nav-login image">
             <div class="nav-login text">
@@ -30,21 +32,98 @@
             </div>
         </div>
     </div>
-
+    
 <div class=menus>
     <div class="tab">
+      <div class="guildinfo">
+        <div class="guildinfo image"><img src="Img/Avatar.jpg" alt=""></div>
+        <div class="guildinfo name">Lorem</div>
+        <div class="guildinfo type">Premium Guild</div>
+        <div class="guildinfo type active">Normal Guild</div>
+        <div class="guildinfo users">25 Users</div>
+      </div>
+      
         <button class="tablinks active" onclick="openmenu(event, 'DashBoard')">DashBoard</button>
+        <button class="tablinks" onclick="openmenu(event, 'Music')">Music</button>
+        <button class="tablinks" onclick="openmenu(event, 'guildlists')">Guild List</button>
         <button class="tablinks" onclick="openmenu(event, 'Modules')">Modules</button>
-        <button class="tablinks" onclick="openmenu(event, 'DashBoard')">DashBoard</button>
     </div>
 
       <div id="DashBoard" class="tabcontent">
         <form action="" method="post">
-          <label for="prefix">Prefix:</label>
-          <input class="prefix" type="text" placeholder="!" >
-          <br>
-          <input type="submit" value="Save" name="submit">
+          <label for="nickname">Nickname</label><br>
+          <input class="form" type="text" id="nickname" placeholder="Mikoto">
+          <input class="button" type="submit" value="Save" name="submit">
         </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="prefix">Prefix</label><br>
+          <input class="form" id="prefix" type="text" placeholder="!m">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="timezone">TimeZone</label><br>
+          <select name="cars" id="timezone" class="form timezones">
+            <option value="Select TimeZone">Select TimeZone</option>
+            <option value="Europe/Lisbon">Europe/Lisbon</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+          </select>
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+
+      </div>
+      <div id="guildlists" class="tabcontent">
+        <h2 style="color: white;">Show on Public Guild List Page</h2>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+      </label>
+      <br>
+      <br>
+      <form action="" method="post">
+        <label for="description">Description</label><p>
+        <textarea name="form" id="description" cols="100" rows="15" style="resize: none;"></textarea>
+        <input class="button" type="submit" value="Save" name="submit">
+      </form>
+
+      </div>
+
+      <div id="Music" class="tabcontent">
+        <h2 style="color: white;">Current: Enabled</h2>
+        <br>
+        <form action="" method="post">
+          <label for="voice">Voice Channel ID</label><br>
+          <input class="form" type="text" id="voice" placeholder="21667256721245663">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="text">Text Channel ID</label><br>
+          <input class="form" id="text" type="text" placeholder="21589024578972363">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="dj">DJ Role ID</label><br>
+          <input class="form" id="dj" type="text" placeholder="129626925298797897">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+        
       </div>
 
       <div id="Modules" class="tabcontent">
@@ -54,7 +133,7 @@
           <h4 class="information"></h4>
               <div class="guildlist">
                   <div class="guild">
-                      <img class="guild 1 image" src="Img/music_module.png" alt="">
+                      <img class="guild 1 image" src="Img/music_module.jpg" alt="">
                       <div class="guild name">Music</div>
                       <br>
                       <label class="switch">
@@ -88,18 +167,36 @@
                     <input type="checkbox" checked>
                     <span class="slider round"></span>
                 </label>
-                <input type="submit" value="Save" name="submit">
+                </div>
+                <div class="guild">
+                  <img class="guild 1 image" src="Img/Avatar.jpg" alt="">
+                  <div class="guild name">Lorem</div>
+                  <br>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                </div>
+                <div class="guild">
+                  <img class="guild 1 image" src="Img/Avatar.jpg" alt="">
+                  <div class="guild name">Lorem</div>
+                  <br>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
                 </div>
               </div>
               
-      </div>
+        </div>
       </div>
 </div>
-    <footer>
-
-
-    </footer>
-
+<footer>
+  <div class="copyright">
+      Jotmf#5474
+  </div>
+</footer>
+  </div>
 <script>
 function openmenu(evt, cityName) {
   var i, tabcontent, tablinks;
