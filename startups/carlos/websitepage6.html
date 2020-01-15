@@ -9,231 +9,313 @@
 </head>
 
 <body>
+    
+        <img src="tresorjewelry.jpg" alt="Smiley face" height="275" width="450">
+        <div class="container">
+        <a href="index.html" class="a"><div class="item item--1 botao" id="anim1">
+            HOME</div> </a>
 
-    startup <div class="container">
-        <div class="item item--1 botao" id="anim1">
-            <a href="index.html">HOME</a></div>
+         <a href="index.html" class="a">   
         <div class="item item--2 botao2" id="anim2">
-            <a href="index.html">DIAMANTES</a></div>
+            SAFIRA</div> </a>
+        
+        <a href="index.html" class="a">   
         <div class="item item--3 botao3" id="anim1">
-            <a href="index.html">RUBYS</a></div>
+            RUBYS</div> </a>
+        
+        <a href="index.html" class="a"> 
         <div class="item item--4 botao4" id="anim2">
-            <a href="index.html">ESMERALDAS</a></div>
-        <div class="item item--5 botao5" id="anim1">
-            <a href="index.html">OURO</a></div>
+        ESMERALDAS</div></a>
+        
+        <a href="index.html" class="a"> 
+        <div class="item item--5 botao5" id="anim1"> 
+        OURO</div></a>
+
+        <a href="index.html" class="a"> 
         <div class="item item--6 botao6" id="anim2">
-            <a href="index.html">SAFIRA</a></div>
+        SAFIRA</div></a>
+
     </div>
 
     <!-- <img src="pic1.jpg" alt="Smiley face" height="720" width="1920"> -->
+    <div class="cards1">
+        <div class="box">
+            <div class="imgBx"><img src="esmeralda1.jpg" alt="" width="280" height="400"></div>
+            <div class="content">
+                <h2>anel de esmeraldas</h2>
+                <p>anel de esmeralda so para festas</p>
+                <a href="websitepage6.html">1000€</a>
+            </div>
+        </div>
 
+    </div>
 
+    <section id="flex">
+        <div class="estilo">anel de esmeralda de 3 carats. A bom preço.
 
+        </div>
+        
 
-    <style>
-        .cards1 .box .imgBx{
-            position:absolute;
-            top:0;
-            left:0;
-            width:100%;
-            height:100%;
-            background:#000;
-            clip-path:circle(400px at center 100px);
-            transition:0.5s;
-            transition-delay: 0.5s;
-        }
-        .cards1 .box:hover .imgBx{
-            clip-path: circle(80px at center 100px);
-            transition-delay: 0s;
-        }
-        .cards1 .box .content{
-         position:absolute;
-         left:0;
-         bottom:0;
-         width:100%;
-         height:55%;
-         padding:20px;
-         box-sizing:border-box;
-         text-align:center;
-        }
-        .cards1 .box{
-            position: relative;
-            width:280px;
-            height:400px;
-            margin: 20px 0;
-            box-sizing: border-box;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
-            overflow:hidden;
+    </section>
+    <section id="flex">
+        <div class="estilo">
+            Caractreristicas: 3 carats.
+            <p></p>
+            Certeficado GIA.
+            <p></p>
+            Brilho- estupendo.
+        </div>
 
-        }
-        .cards1{
-            position:relative;
-            width:1850px;
+        <style>
+            .estilo{
+                font-family: sans-serif;
+                color: darkslategray;
+            }
+            #flex{
+                margin:50px;
+                margin-right: 45px;
+                padding:50px;
+                
+                background-color: rgba(204,204,204,0.4);
+                border:solid 5px #ccc;
+            }
+            #flex div{
+                display:inline-block;
+                width:50%;
+            }
+            .cards1 .box .imgBx{
+                position:relative;
+                top:0;
+                left:0;
+                width:100%;
+                height:100%;
+                background:#000;
+                clip-path:circle(400px at center 100px);
+                transition:0.5s;
+                transition-delay: 0.5s;
+            }
+            .cards1 .box:hover .imgBx{
+                clip-path: circle(80px at center 100px);
+                transition-delay: 0s;
+            }
+            .cards1 .box .content{
+             position:absolute;
+             left:0;
+             bottom:0;
+             width:100%;
+             height:55%;
+             padding:20px;
+             box-sizing:border-box;
+             text-align:center;
+            }
+            .cards1 .box{
+                position: relative;
+                width:280px;
+                height:400px;
+                margin: 10px;
+                box-sizing: border-box;
+                box-shadow: 5px 5px 15px rgba(0,0,0,0.5);
+                overflow:hidden;
+    
+            }
+            .cards1{
+                position:relative;
+                width:1850px;
+                display: flex;
+                justify-content: space-around;
+                margin:20px 0;
+                font-family: consolas;
+            }
+            body {
+                background-image: url("pic1.jpg");
+    
+            }
+            .a{
+                text-decoration: none;
+                color: blueviolet;
+               
+            }
+            .container {
+                display: grid;
+                grid-template-rows: 20px 20px;
+                grid-template-columns: 300px 300px 300px 350px 300px 300px;
+                width: 2000px;
+                margin: 20px;
+                background-color: #eee;
+                text-align: center;
+    
+    
+            }
+    
+            .botao {
+                width: 220px;
+                height: 40px;
+                margin: 0px;
+                background-color: grey;
+                border: none;
+                /* color: grey; */
+               
+                cursor: pointer;
+            }
+    
+            .botao2 {
+                width: 220px;
+                height: 40px;
+                margin: 0px;
+                background-color: grey;
+                border: none;
+                 
+                cursor: pointer;
+            }
+    
+            .botao3 {
+                width: 220px;
+                height: 40px;
+                margin: 0px;
+                background-color: grey;
+                border: none;
+                 /* color: red;  */
+                cursor: pointer;
+            }
+    
+            .botao4 {
+                width: 220px;
+                height: 40px;
+                margin: 0px;
+                background-color: grey;
+                border: none;
+                /* color: grey; */
+                cursor: pointer;
+            }
+    
+            .botao5 {
+                width: 220px;
+                height: 40px;
+                margin: 0px;
+                background-color: grey;
+                border: none;
+                /* color: grey; */
+                cursor: pointer;
+            }
+    
+            .botao6 {
+                width: 220px;
+                height: 40px;
+                margin: 0px;
+                background-color: grey;
+                border: none;
+                /* color: grey; */
+                cursor: pointer;
+            }
+    
+            #anim1 {
+                border: 0px solid blueviolet;
+                transition-duration: 200ms;
+            }
+    
+            #anim1:hover {
+                background-color: blueviolet;
+                color: white;
+            }
+    
+            #anim2 {
+                position: relative;
+            }
+    
+            #anim2::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 4px;
+                background-color: blueviolet;
+    
+                transition-duration: 200ms;
+    
+            }
+    
+            #anim2::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                right: 0;
+                width: 2;
+                height: 4px;
+                background-color: blueviolet;
+    
+                transition-duration: 200ms;
+    
+            }
+    
+            #anim2:hover::before,
+            #anim2:hover::after {
+                width: 100%;
+            }
+    
+    
+            #anim5 {
+                position: relative;
+    
+            }
+    
+            #anim5::before {
+                position: absolute;
+                content: '';
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: blueviolet;
+    
+                transition-duration: 200ms;
+            }
+    
+            #anim5::after {
+                position: absolute;
+                content: '';
+                bottom: 0;
+                right: 0;
+                width: 0;
+                height: 3px;
+                background-color: blueviolet;
+    
+                transition-delay: 200ms;
+                transition-duration: 200ms;
+            }
+    
+            #anim5:hover::before,
+            #anim5:hover::after {
+                width: 100%;
+            }
+            footer {
+            color: black;
             display: flex;
-            justify-content: space-around;
-            margin:20px 0;
-            font-family: consolas;
-        }
-        body {
-            background-image: url("pic1.jpg");
-
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            font-style: italic;
         }
 
-        .container {
-            display: grid;
-            grid-template-rows: 20px 20px;
-            grid-template-columns: 300px 300px 300px 350px 300px 300px;
-            width: 2000px;
-            margin: 20px;
-            background-color: #eee;
-            text-align: center;
-
-
+        footer .container .col-lg-12 {
+            background-color: maroon;
+            padding: 60px;
         }
+        </style>
+<footer>
 
-        .botao {
-            width: 220px;
-            height: 40px;
-            margin: 0px;
-            background-color: red;
-            border: none;
-            color: blueviolet;
+    <div class="col-lg-12 text-center">
+        <h3>UMa Cantina</h1> <br> <br>
+            <p>Rua de Santa Maria, nº 253 / Funchal / 291.123.123</p>
+            <p>Horário: De 2ª a 6ª e Sábado das 09:00 às 14:00</p> <br>
+            <div class="social-media"> <a href="#"> <i class="fa fa-facebook"></i> </a> <a href="#"> <i
+                        class="fa fa-twitter"></i> </a> <a href="#"> <i class="fa fa-pinterest"></i> </a> <a
+                    href="#"> <i class="fa fa-instagram"></i> </a> </div> <br>
+            <p>&copy; 2017 Universidade da Madeira</p>
+    </div>
+    
 
-            cursor: pointer;
-        }
-
-        .botao2 {
-            width: 220px;
-            height: 40px;
-            margin: 0px;
-            background-color: blue;
-            border: none;
-            color: red;
-            cursor: pointer;
-        }
-
-        .botao3 {
-            width: 220px;
-            height: 40px;
-            margin: 0px;
-            background-color: grey;
-            border: none;
-            color: blue;
-            cursor: pointer;
-        }
-
-        .botao4 {
-            width: 220px;
-            height: 40px;
-            margin: 0px;
-            background-color: black;
-            border: none;
-            color: blue;
-            cursor: pointer;
-        }
-
-        .botao5 {
-            width: 220px;
-            height: 40px;
-            margin: 0px;
-            background-color: purple;
-            border: none;
-            color: green;
-            cursor: pointer;
-        }
-
-        .botao6 {
-            width: 220px;
-            height: 40px;
-            margin: 0px;
-            background-color: pink;
-            border: none;
-            color: grey;
-            cursor: pointer;
-        }
-
-        #anim1 {
-            border: 0px solid blueviolet;
-            transition-duration: 200ms;
-        }
-
-        #anim1:hover {
-            background-color: blueviolet;
-            color: white;
-        }
-
-        #anim2 {
-            position: relative;
-        }
-
-        #anim2::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 4px;
-            background-color: blueviolet;
-
-            transition-duration: 200ms;
-
-        }
-
-        #anim2::after {
-            position: absolute;
-            content: '';
-            bottom: 0;
-            right: 0;
-            width: 2;
-            height: 4px;
-            background-color: blueviolet;
-
-            transition-duration: 200ms;
-
-        }
-
-        #anim2:hover::before,
-        #anim2:hover::after {
-            width: 100%;
-        }
-
-
-        #anim5 {
-            position: relative;
-
-        }
-
-        #anim5::before {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 3px;
-            background-color: blueviolet;
-
-            transition-duration: 200ms;
-        }
-
-        #anim5::after {
-            position: absolute;
-            content: '';
-            bottom: 0;
-            right: 0;
-            width: 0;
-            height: 3px;
-            background-color: blueviolet;
-
-            transition-delay: 200ms;
-            transition-duration: 200ms;
-        }
-
-        #anim5:hover::before,
-        #anim5:hover::after {
-            width: 100%;
-        }
-    </style>
-
+</footer>
 </body>
 <footer>
 
