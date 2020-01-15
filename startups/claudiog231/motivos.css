@@ -111,5 +111,9 @@ h1 {
 
 
 .motivostext {
-	text-align: center;
-}
+	width: 70%;
+	margin: auto;
+	margin-top: -50px;
+	font-size: 25px;
+	text-align: justify;
+  }
