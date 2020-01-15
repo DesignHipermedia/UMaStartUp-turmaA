@@ -16,11 +16,14 @@
                 <a href="index.html" class="nav-text">Inicio</a>
             </div>
             <div class="nav-b">
-                <a href="sobre.html" class="nav-text">Sobre</a>
-            </div>
+              <a href="sobre.html" class="nav-text">Get Premium</a>
+          </div>
             <div class="nav-b">
                 <a href="dashboard.html" class="nav-text ativo">DashBoard</a>
             </div>
+            <div class="nav-b">
+              <a href="guildpubliclist.html" class="nav-text">Public Guild List</a>
+          </div>
         </div>
         <div class="nav-login">
             <img src="Img/Avatar.jpg" class="nav-login image">
@@ -35,10 +38,14 @@
       <div class="guildinfo">
         <div class="guildinfo image"><img src="Img/Avatar.jpg" alt=""></div>
         <div class="guildinfo name">Lorem</div>
+        <div class="guildinfo type">Premium Guild</div>
+        <div class="guildinfo type active">Normal Guild</div>
         <div class="guildinfo users">25 Users</div>
       </div>
+      
         <button class="tablinks active" onclick="openmenu(event, 'DashBoard')">DashBoard</button>
         <button class="tablinks" onclick="openmenu(event, 'Music')">Music</button>
+        <button class="tablinks" onclick="openmenu(event, 'guildlists')">Guild List</button>
         <button class="tablinks" onclick="openmenu(event, 'Modules')">Modules</button>
     </div>
 
@@ -76,9 +83,25 @@
         </form>
 
       </div>
+      <div id="guildlists" class="tabcontent">
+        <h2 style="color: white;">Show on Public Guild List Page</h2>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+      </label>
+      <br>
+      <br>
+      <form action="" method="post">
+        <label for="description">Description</label><p>
+        <textarea name="form" id="description" cols="100" rows="15" style="resize: none;"></textarea>
+        <input class="button" type="submit" value="Save" name="submit">
+      </form>
+
+      </div>
 
       <div id="Music" class="tabcontent">
-        
+        <h2 style="color: white;">Current: Enabled</h2>
+        <br>
         <form action="" method="post">
           <label for="voice">Voice Channel ID</label><br>
           <input class="form" type="text" id="voice" placeholder="21667256721245663">
