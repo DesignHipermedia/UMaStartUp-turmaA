@@ -32,6 +32,7 @@ body{
     padding: 50px;
 }
 .header{
+    display: grid;
     text-align: center;
     background-color: white;
     color: black;
@@ -42,6 +43,7 @@ a{
     text-decoration: none;
 }
 .smallbox1{
+    display: grid;
     color: black;
     background-color: white;
     font-size: 30px;
@@ -52,6 +54,7 @@ a{
     height: 100%;
 }
 .smallbox2{
+    display: grid;
     background-color:  transparent;
     color: black;
     font-size: 30px;
@@ -62,6 +65,7 @@ a{
     height: 100%;
 }
 .smallbox3{
+    display: grid;
     background-color: transparent;
     color: black;
     font-size: 30px;
@@ -72,6 +76,7 @@ a{
     height: 100%;
 }
 .maincontent{
+    display: grid;
     background-color: #ff2121;
     color: black;
     font-size: 30px;
@@ -87,12 +92,13 @@ a{
     padding: 10px;
 }
 .sidebar{
+    text-align: center;
+    display: grid;
     background-color:  lightsalmon;
     color: black;
     font-size: 30px;
     grid-column: 4;
     grid-row: 2/4;
-    text-align: center;
     border: black 2px solid;
     font-family: 'Open Sans', sans-serif;
 }
@@ -145,8 +151,9 @@ a{
 
 .produto1{
     background-image: url('tyranny.png');
-    width: 100%;
-    background-position: center ;
+    width: auto;
+    height: auto;
+    background-position: center;
     background-repeat: no-repeat;
     text-align: center;
     
