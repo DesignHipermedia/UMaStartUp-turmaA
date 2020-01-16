@@ -247,34 +247,6 @@ svg {
     text-align: left;
 }
 
-.previous-button {
-    background-color: green;
-    color: white;
-    text-decoration: none;
-    width: 100px;
-    height: 50px;
-    margin: 15px;
-    border: none;
-}
-
-.next-button {
-    background-color: green;
-    color: white;
-    text-decoration: none;
-    width: 100px;
-    height: 50px;
-    margin: 15px;
-    border: none;
-}
-
-.previous-button:hover {
-    background-color: darkgreen;
-}
-
-.next-button:hover {
-    background-color: darkgreen;
-}
-
 .topic_description {
     text-align: left;
     width: 100%;
@@ -373,5 +345,13 @@ svg {
 }
 
 .python1_exe_2 {
+    width: 40%;
+}
+
+.c1_exe_1 {
+    width: 40%;
+}
+
+.c1_exe_2 {
     width: 40%;
 }
