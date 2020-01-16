@@ -43,7 +43,6 @@ a{
     text-decoration: none;
 }
 .smallbox1{
-    display: grid;
     color: black;
     background-color: white;
     font-size: 30px;
@@ -54,7 +53,7 @@ a{
     height: 100%;
 }
 .smallbox2{
-    display: grid;
+   
     background-color:  transparent;
     color: black;
     font-size: 30px;
@@ -65,7 +64,7 @@ a{
     height: 100%;
 }
 .smallbox3{
-    display: grid;
+
     background-color: transparent;
     color: black;
     font-size: 30px;
@@ -76,7 +75,6 @@ a{
     height: 100%;
 }
 .maincontent{
-    display: grid;
     background-color: #ff2121;
     color: black;
     font-size: 30px;
@@ -85,6 +83,8 @@ a{
     text-align: center;
     border: black 2px solid;
     font-family: 'Open Sans', sans-serif;
+    padding-top: 25px;
+    
 }
 .texto{
     color: black;
@@ -101,6 +101,7 @@ a{
     grid-row: 2/4;
     border: black 2px solid;
     font-family: 'Open Sans', sans-serif;
+    padding-top: 25px;
 }
 .footer{
     background-color: darkred;

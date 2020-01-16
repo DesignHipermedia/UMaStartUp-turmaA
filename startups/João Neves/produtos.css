@@ -47,11 +47,15 @@ a{
     font-family: 'Open Sans', sans-serif;
 }
 .box{
-    background-color: #ff2121;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
     color: white;
     font-size: 30px;
     border: black 2px solid;
     font-family: 'Open Sans', sans-serif;
+    align-content: center;
 }
 .box div{
     margin-top: -70px;
