@@ -138,20 +138,13 @@ ul {
 
 .pricing-title {
     color: #FFF;
-    background: #846075;
+    background: #00ADA7;
     padding: 20px 0;
     font-size: 2em;
     text-transform: uppercase;
     text-shadow: 0 1px 1px rgba(0,0,0,0.4);
 }
 
-.pricing-table.recommended .pricing-title {
-    background: #846075;
-}
-
-.pricing-table.recommended .pricing-action {
-    background: #846075;
-}
 
 .pricing-table .price {
     background: #A491D3;
@@ -180,6 +173,10 @@ ul {
 }
 
 
+
+.table-list li:nth-child(2n) {
+    background: #F0F0F0;
+}
 
 .table-buy {
     background: #A491D3;
