@@ -208,6 +208,10 @@ a {
     font-size: 30px;
     padding-bottom: 20px;
 }
+.box:hover{
+    transition-duration: 0.5s;
+    transform: scale(1.1);
+}
 footer{
     background-color: #23272A;
     height: 10vh;
