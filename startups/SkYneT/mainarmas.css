@@ -52,7 +52,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border: 3px solid pink;
   -ms-grid-row: 9;
   grid-row: 9/9;
   -ms-grid-column: 3;
@@ -155,5 +154,27 @@ body {
   height: 2rem;
   width: 2rem;
   fill: black;
+}
+
+/****************************FOOTER************************/
+.foot {
+  padding: 20px;
+  text-align: center;
+  -webkit-text-emphasis-position: fixed;
+          text-emphasis-position: fixed;
+  background-color: inherit;
+}
+
+.foot h2 {
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  font-size: 10px;
+  color: grey;
+  display: block;
+}
+
+.foot a:hover {
+  color: white;
+  background-color: blue;
 }
 /*# sourceMappingURL=mainarmas.css.map */

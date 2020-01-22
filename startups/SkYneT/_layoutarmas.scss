@@ -76,3 +76,23 @@
         fill: black;
     }
 }
+
+/****************************FOOTER************************/
+.foot{
+    padding: 20px;
+    text-align: center;
+    text-emphasis-position: fixed;
+    background-color: inherit;
+}
+.foot h2{
+    text-decoration: solid;
+    font-size: 10px;
+    color: grey;
+    display: block;
+
+}
+
+.foot a:hover{
+    color: white;
+    background-color: blue;
+}
