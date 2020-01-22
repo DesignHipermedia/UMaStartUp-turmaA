@@ -1,0 +1,78 @@
+/*****************BARRA DE NAVEGAÇÃO ESQUERDA****************/
+.sidebar a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: solid;
+    font-size: 30px;
+    color: gray;
+    display: block;
+
+}
+
+.sidebar a:hover{
+    color: white;
+    background-color: brown;
+    border-radius: 10%;
+}
+
+/**************ITEM // CABEÇALHO*************/
+.searchbox {
+    grid-row:1/2;
+    grid-column: 2/10;
+    height: 75px;
+}
+
+.logo a{
+    grid-row:1/2;
+    grid-column: 1/2;
+    text-decoration: solid;
+    font-size: 30px;
+
+    height: 35px;
+    width: 155px;
+
+    color: brown;
+
+}
+.logo:hover{
+    cursor: pointer;
+    color: green;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__input {
+        font-family: inherit;
+        font-size: inherit;
+        color: inherit;
+        background-color: whitesmoke;
+        opacity: 0.3;
+        border: none;
+        padding: .6rem 2rem;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        width: 95%;
+        transition: all .2s;
+        margin-right: none;
+    }
+    &__button{
+        border: none;
+        background-color: whitesmoke;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+
+        &:focus {
+            outline: none;
+        }
+        &:active{
+            transform: translateY(2px);
+        }
+    }
+    &__icon{
+        height: 2rem;
+        width: 2rem;
+        fill: black;
+    }
+}

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="main.css">
-    <title>Weap-info</title>
+    <link rel="stylesheet" href="./mainarmas.css">
+    <link rel="stylesheet" href="./ak.css">
+    
+    <title>AK</title>
 </head>
 <body>
-
     <div class="container">
         <div class="searchbox">
             <form action="#" class="search">
@@ -26,6 +27,34 @@
             <a href="./index.html">Weap-info</a>
         </div>
 
+        <!--************************* sobre AK47 ********************************-->
+        <img src="./ak47_lotus.png" alt="ak_image" class="ak_image">
+
+        <div class="akinfo">
+            Esta arma foi baseada na arma real "AK-47". <br>
+            Criada na União Soviética entre 1946-1948. <br>
+            Esta arma é de calibre 7.62, tem 4.3Kg, 87 centimetros de comprimento
+        </div>
+
+        <div class="akspecs">
+            <div class="barras">
+                <div class="barra damage">Damage - 36</div>
+            </div>
+            <div class="barras">
+                <div class="barra firerate">Firerate - 10</div>
+            </div>   
+            <div class="barras">
+                <div class="barra recoil">Recoil Control - 68</div>
+            </div>   
+            <div class="barras">
+                <div class="barra range">Accurate range - 24m</div>
+            </div>  
+            <div class="barras">
+                <div class="barra armor">Armor penetration - 155</div>
+            </div>
+        </div>
+<!--************************* ********** ********************************-->
+
         <nav class="sidebar">
             <a href="ak.html">AK</a>
             <a href="m4.html">M4</a>
@@ -35,29 +64,6 @@
             <a href="scout.html">SCOUT</a>
         </nav>
 
-        <div class="slide ak47">AK-47</div>
-        <div class="slide m4a4">M4</div>
-        <div class="slide AWP">AWP</div>
-        <div class="slide deagle">DEAGLE</div>
-        <div class="slide usp">USP-S</div>
-
-        <!--script carousel-->
-        <script>
-            var slideIndex = 0;
-            carousel();
-            
-            function carousel() {
-              var i;
-              var x = document.getElementsByClassName("slide");
-              for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none"; 
-              }
-              slideIndex++;
-              if (slideIndex > x.length) {slideIndex = 1} 
-              x[slideIndex-1].style.display = "block"; 
-              setTimeout(carousel, 2000); 
-            }
-        </script>
 
         <div class="footer">       
             <nav class="foot">
@@ -68,8 +74,7 @@
 
             Copyright &copy; UNIVERSIDADE da MADEIRA | Pedro Fernandes
         </div>
-</div>
+</div>    
     
-
 </body>
 </html>
