@@ -5,17 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="principal.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Weap-info</title>
 </head>
 <body>
+
     <div class="container">
-        <div class="item item--1">Roxo</div>
-        <div class="item item--2">Azul</div>
-        <div class="item item--3">Amarelo</div>
-        <div class="item item--4">Verde</div>
-        <div class="item item--5">Vermelho</div>
-        <div class="item item--6">Rosa</div>
-    </div>
+        <div class="searchbox">
+            <form action="#" class="search">
+                <input type="text" class="search__input" placeholder="Pesquisar Skin">
+                <button class="search__button">
+                    <svg class="search__icon">
+                        <use xlink:href="symbol-defs.svg#icon-search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <div class="logo">
+            <a href="./index.html">Weap-info</a>
+        </div>
+
+        <nav class="sidebar">
+            <a href="ak.html">AK</a>
+            <a href="m4.html">M4</a>
+            <a href="awp.html">AWP</a>
+            <a href="deagle.html">DEAGLE</a>
+            <a href="usp.html">USP-S</a>
+            <a href="scout.html">SCOUT</a>
+        </nav>
+
+        <div class="slide ak47">AK-47</div>
+        <div class="slide m4a4">M4</div>
+        <div class="slide AWP">AWP</div>
+        <div class="slide deagle">DEAGLE</div>
+        <div class="slide usp">USP-S</div>
+
+        <!--script carousel-->
+        <script>
+            var slideIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("slide");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none"; 
+              }
+              slideIndex++;
+              if (slideIndex > x.length) {slideIndex = 1} 
+              x[slideIndex-1].style.display = "block"; 
+              setTimeout(carousel, 2000); 
+            }
+        </script>
+
+        <div class="footer">       
+            <nav class="foot">
+                <a href="./sobre.html">Sobre nós</a>
+            </nav>   
+
+            Copyright &copy; UNIVERSIDADE da MADEIRA | Pedro Fernandes
+        </div>
+</div>
+    
+
 </body>
 </html>
