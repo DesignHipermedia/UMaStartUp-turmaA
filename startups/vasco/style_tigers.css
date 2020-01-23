@@ -1,0 +1,57 @@
+
+/*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*/
+body, html {
+    height: 100%;
+    background-color: black;
+    margin: 0px;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("tyjy.jpg");
+  
+    /* Full height */
+    height: 50%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+
+
+/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+.header {
+    
+    
+    background: rgb(255, 255, 255);
+    color: white;
+    font-size: 10px;
+  }
+  #img_header{
+    height: 50px; 
+  }
+
+
+
+
+
+  .container1 {
+    max-width: 900px;  /*Espaço da esquera para a direita |vaziu|card|card|card|vaziu|*/
+    margin: 0 auto;  /*centrar conteudo*/
+    background-color: black;
+  }
+
+  p{
+    color:white;
+    
+  }
+
+  #ajustar{
+    border-width: 50px;
+    border-radius: 0.7%;
+    width: 100%;
+    border-top: 30px;
+    border-color: brown;
+  }

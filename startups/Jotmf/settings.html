@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/dashboardstyle.css">
+    <title>Mikoto Guild Lorem</title>
+    <link rel="shortcut icon" type="image/png" href="Img/bot-avatar.png">
+</head>
+<body>
+    <div class="loading"></div>
+    <div class="header">
+        <div class="nav">
+            <div class="nav-b">
+                <a href="index.html" class="nav-text">Inicio</a>
+            </div>
+            <div class="nav-b">
+              <a href="sobre.html" class="nav-text">Get Premium</a>
+          </div>
+            <div class="nav-b">
+                <a href="dashboard.html" class="nav-text ativo">DashBoard</a>
+            </div>
+            <div class="nav-b">
+              <a href="guildpubliclist.html" class="nav-text">Public Guild List</a>
+          </div>
+        </div>
+        <div class="nav-login">
+            <img src="Img/Avatar.jpg" class="nav-login image">
+            <div class="nav-login text">
+                Jotmf#5474
+            </div>
+        </div>
+    </div>
+    
+<div class=menus>
+    <div class="tab">
+      <div class="guildinfo">
+        <div class="guildinfo image"><img src="Img/Avatar.jpg" alt=""></div>
+        <div class="guildinfo name">Lorem</div>
+        <div class="guildinfo type">Premium Guild</div>
+        <div class="guildinfo type active">Normal Guild</div>
+        <div class="guildinfo users">25 Users</div>
+      </div>
+      
+        <button class="tablinks active" onclick="openmenu(event, 'DashBoard')">DashBoard</button>
+        <button class="tablinks" onclick="openmenu(event, 'Music')">Music</button>
+        <button class="tablinks" onclick="openmenu(event, 'guildlists')">Guild List</button>
+        <button class="tablinks" onclick="openmenu(event, 'Modules')">Modules</button>
+    </div>
+
+      <div id="DashBoard" class="tabcontent">
+        <form action="" method="post">
+          <label for="nickname">Nickname</label><br>
+          <input class="form" type="text" id="nickname" placeholder="Mikoto">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="prefix">Prefix</label><br>
+          <input class="form" id="prefix" type="text" placeholder="!m">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="timezone">TimeZone</label><br>
+          <select name="cars" id="timezone" class="form timezones">
+            <option value="Select TimeZone">Select TimeZone</option>
+            <option value="Europe/Lisbon">Europe/Lisbon</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+            <option value="Lorem">Lorem</option>
+          </select>
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+
+      </div>
+      <div id="guildlists" class="tabcontent">
+        <h2 style="color: white;">Show on Public Guild List Page</h2>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+      </label>
+      <br>
+      <br>
+      <form action="" method="post">
+        <label for="description">Description</label><p>
+        <textarea name="form" id="description" cols="100" rows="15" style="resize: none;"></textarea>
+        <input class="button" type="submit" value="Save" name="submit">
+      </form>
+      </div>
+
+
+      <div id="Music" class="tabcontent">
+        <br>
+        <form action="" method="post">
+          <label for="voice">Voice Channel ID</label><br>
+          <input class="form" type="text" id="voice" placeholder="21667256721245663">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="text">Text Channel ID</label><br>
+          <input class="form" id="text" type="text" placeholder="21589024578972363">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+          <br>
+          <br>
+          <br>
+        <form action="" method="post">
+          <label for="dj">DJ Role ID</label><br>
+          <input class="form" id="dj" type="text" placeholder="129626925298797897">
+          <input class="button" type="submit" value="Save" name="submit">
+        </form>
+        
+      </div>
+
+      <div id="Modules" class="tabcontent">
+        <div class="guilds">
+          <br>
+          <h2 class="title">Modules</h2>
+          <h4 class="information"></h4>
+              <div class="guildlist">
+                  <div class="guild">
+                      <img class="guild 1 image" src="Img/music_module.jpg" alt="">
+                      <div class="guild name">Music</div>
+                      <br>
+                      <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
+                  </div>
+                  <div class="guild">
+                    <img class="guild 1 image" src="Img/Avatar.jpg" alt="">
+                    <div class="guild name">AutoMod</div>
+                    <br>
+                    <label class="switch">
+                      <input type="checkbox">
+                      <span class="slider round"></span>
+                  </label>
+                </div>
+                <div class="guild">
+                  <img class="guild 1 image" src="Img/Avatar.jpg" alt="">
+                  <div class="guild name">Lorem</div>
+                  <br>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                </div>
+                <div class="guild">
+                  <img class="guild 1 image" src="Img/Avatar.jpg" alt="">
+                  <div class="guild name">Lorem</div>
+                  <br>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                </div>
+                <div class="guild">
+                  <img class="guild 1 image" src="Img/Avatar.jpg" alt="">
+                  <div class="guild name">Lorem</div>
+                  <br>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                </div>
+                <div class="guild">
+                  <img class="guild 1 image" src="Img/Avatar.jpg" alt="">
+                  <div class="guild name">Lorem</div>
+                  <br>
+                  <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+                </div>
+              </div>
+              
+        </div>
+      </div>
+</div>
+<footer>
+  <div class="copyright">
+      Jotmf#5474
+  </div>
+</footer>
+  </div>
+<script>
+function openmenu(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+  }
+</script>
+</body>
+</html>

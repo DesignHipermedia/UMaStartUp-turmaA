@@ -1,0 +1,91 @@
+.user-bar{
+    padding-right: 200px;
+    text-align: right;
+    height: 35px;
+    background-color: black;
+    color:white;
+    margin-left: 0;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: darkred;
+}
+header{
+    height: 250px;
+    width: 1630px;
+    background-color: lightgrey;
+    margin:0 145px;
+}
+footer{
+    height: 35px;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding-top: 17px;
+    width: 100vw;
+}
+.foot2{
+    height: 200px;
+    background-color: lightgray;
+    text-align: center;
+    margin: 0 145px;
+    width: 1630px;
+}
+.m2{
+    margin-left: 145px;
+    width: 1630px;
+    background-color: white;
+    height: 375px;
+}
+.main{
+    height: 750px;
+}
+.headertop{
+    height: 200px;
+}
+.headerbot{
+    height: 50px;
+    background-color: white;
+    text-align: center;
+}
+.btnhead{
+    height: 50px;
+    width: 200px;
+}
+
+.userlogo{
+    height: 35px;
+    width: 35px;
+}
+
+.intel{
+    width: 1630px;
+    height: 375px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-color: yellow;
+    justify-content: space-between;
+}
+.amd{
+    background-color: #ff2424;
+}
+.intel1, .intel2, .intel3{
+    text-align: center;
+    height: 365px;
+    width: 275px;
+    background-color: white;
+    margin: 100px;
+}
+.imgmain{
+    width: 275px;
+}
+.btnmain{
+    width: 275px;
+    height: 42px;
+}
+.vert{
+    writing-mode: vertical-rl;
+    font-size: 25px;}
