@@ -303,9 +303,19 @@ form .timezones *{
  color: white;
  border-radius: 50%;
 }
+
 form .timezones option{
     outline: none;
     border-radius: 10px;
+}
+
+textarea{
+    color: rgb(114,118,125);
+    background-color:#2C2F33 ;
+    border: 2px solid lightgreen;
+    border-radius: 10px;
+    outline:none;
+    padding: 5px 5px 5px 10px;
 }
 .tab .guildinfo{
     display: grid;
@@ -315,6 +325,8 @@ form .timezones option{
     border-radius: 50%;
     border: 2px solid rgb(114,118,125);
     width: 100px;
+    margin: 10px;
+    height: 70px;
 }
 .tab .guildinfo .name{
     color: #7289DA;
@@ -347,4 +359,10 @@ form .timezones option{
 .tab button:hover{
     background-color: #2B2B33;
     cursor: pointer;
+}
+.guild .image{
+    margin: 10px;
+    border-radius: 50%;
+    height: 70px;
+    overflow: hidden;
 }
