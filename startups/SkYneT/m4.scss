@@ -1,0 +1,71 @@
+/*@media only screen and (max-width: 768px) {
+    /* For mobile phones: /
+    .m4_image
+}*/
+
+
+.m4_image{
+    grid-row: 3/9;
+    grid-column: 3/7;
+    
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.m4info{
+    grid-row: 7/9;
+    grid-column: 3/7;
+
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    font-size: larger;
+    font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.1);
+
+}
+
+.m4specs{
+    grid-row: 3/7;
+    grid-column: 7/10;
+}
+
+
+/*********Barra Specs******/
+.barras{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    margin-left: 10px;
+    margin-bottom: 5px;
+
+}
+.barra {
+    text-align: left;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+}
+
+.damage{
+    width: 33%; 
+    background-color: rgba(19, 85, 146, 1);
+}
+.firerate{
+    width: 65%; 
+    background-color: rgba(19, 85, 146, 1);
+}
+.recoil{
+    width: 77%; 
+    background-color: rgba(19, 85, 146, 1);
+}
+.range{
+    width: 30%; 
+    background-color: rgba(19, 85, 146, 1);
+}
+.armor{
+    width: 40%; 
+    background-color: rgba(19, 85, 146, 1);
+}

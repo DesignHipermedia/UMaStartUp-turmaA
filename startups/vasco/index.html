@@ -1,25 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!--
+         https://www.nationalgeographic.com/
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="main.scss">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="fullscreen_navigation.css">
+    <title>
+        National Geographic
+    </title>
+    <link rel="icon" href="logo_200.png">
 </head>
-<body>
-    startup
+<body style="overflow:auto">
 
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a id="animal" href="tigers.html">ANIMAL</a>
+            <a id="nature" href="puma.html">NATURE</a>
+            <a id="travel" href="lioness.html">TRAVEL</a>
+            <a id="history" href="history.html">HISTORY</a>
+            <a id="menuu" href="index.html">MENU</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
 
-    <div class="container"> 
-        <div class="item item--1">Inicio </div>
-        <div class="item item--2">y </div>
-        <div class="item item--3">x </div>
-        <div class="item item--4">z </div>
-        <div class="item item--5">h </div>
+    <div class="header">
+        <span>  <!-- span é para fazer agrupamentos, "child elements"-->
+            <div class="grupo5">
+                <div class="column5 left5">
+                    <a href="index.html">
+                        <img src="national_geographic_magazine_logo.png" alt="" id="img_header">
+                    </a>
+                </div>
+                <div class="column5 middle5">
+                <p style="cursor:pointer;color: rgb(0, 0, 0);" onclick="openNav()" id="navigation_header" >&#9910; Menu</p>  <!--https://www.w3schools.com/charsets/ref_emoji.asp-->
+                </div>
+            </div>
+        </span>    
     </div>
 
 
+    
+    <div class="bg1"><!-- Primeiro background-->
+        <br><br>
+        <br><br>
+        <br><br>
+        <h1 style="color: aliceblue;">EXPLORE TODAY</h1>
+        <h3 style="color: aliceblue;">Through the eyes of our Explorers, photographers, journalists, and filmmakers</h3>
+        <br><br>
+        <br><br>
+        <div class="container1"><!-- inicio do conteudo-->
+            <div class="cards1">
+
+                <a class="card1" href="tigers.html">
+                    <span>
+                        <img id="img1" src="leopard.png" alt="">
+                        <span class="card1-title">
+                            <h3>leopard</h3>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="card1" href="puma.html">
+                    <span>
+                        <img id="img1" src="caracal.png" alt="">
+                        <span class="card1-title">
+                            <h3>Caracal</h3>
+                        </span>
+                    </span>
+                </a>
+
+                
+
+                <a class="card1" href="lioness.html">
+                    <span>
+                        <img id="img1" src="cheetah.png" alt="">
+                        <span class="card1-title">
+                            <h3>cheetah</h3>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="card1" href="history.html">
+                    <span>
+                        <img id="img1" src="lioness.png" alt="">
+                        <span class="card1-title">
+                            <h3>lioness</h3>
+                        </span>
+                    </span>
+                </a>
+
+                <a class="card1" href="#">
+                    <span>
+                        <img id="img1" src="tiger.png" alt="">
+                        <span class="card1-title">
+                            <h3>tiger</h3>
+                        </span>
+                    </span>
+                </a>
+
+
+                <a class="card1" href="#">
+                    <span>
+                        <img id="img1" src="puma.png" alt="">
+                        <span class="card1-title">
+                            <h3>puma</h3>
+                        </span>
+                    </span>
+                </a>
+            </div>
+        </div><!-- fim do conteudo-->   
+    </div> <!-- fim do PRIMEIRO background-->  
+    
+
+
+
+
+
+
+    <div class="bg2"><!-- SEGUNDO background-->
+
+    </div><!-- fim do SEGUNDO background-->  
+
+
+
+
+
+
+
+    <div class="bg3"><!-- TERCEIRO background-->
+        <br><br>
+        <br><br>
+        <br><br>
+        <h1 style="color: aliceblue;">EXPLORE TODAY</h1>
+        <h3 style="color: aliceblue;">Through the eyes of our Explorers, photographers, journalists, and filmmakers</h3>
+        <br><br>
+        <br><br>
+        <br><br>
+        <div class="container1"><!-- inicio do conteudo-->
+            <div class="cards2">
+
+                <a class="card2" href="#">
+                    <span>
+                        <img id="img2" src="908x1212-Q70_5be9f17610627c8031095308292dea03.jpg" alt="">
+                        
+                    </span>
+                </a>
+
+                <a class="card2" href="#">
+                    <span>
+                        <img id="img2" src="908x1212-Q70_440dbfa5b330cb03bdff9544d1484cac.jpg" alt="">
+                        
+                    </span>
+                </a>
+
+                
+
+                <a class="card2" href="#">
+                    <span>
+                        <img id="img2" src="primalsurvivor.png" alt="">
+                        
+                    </span>
+                </a>
+
+                <a class="card2" href="#">
+                    <span>
+                        <img id="img2" src="livefreeordie.png" alt="">
+                        
+                    </span>
+                </a>
+
+                <a class="card2" href="#">
+                    <span>
+                        <img id="img2" src="908x1212-Q70_7b7396b1506a50bc9d1f2cd1a0ee7892.jpg" alt="">
+                        
+                    </span>
+                </a>
+
+
+                <a class="card2" href="#">
+                    <span>
+                        <img id="img2" src="908x1212-Q70_ee30f1237034e8c4cb7aee38882dd606.jpg" alt="">
+                        
+                    </span>
+                </a>
+            </div>
+            <br>
+            <br>
+            <br>
+        </div><!-- fim do conteudo-->   
+       
+            
+        
+              
+
+              
+
+        
+        </div>
+        
+
+
+        
+    </div><!-- fim do conteudo-->  
+
+
+
+
+
+
+
+
+
+    <div class="isto">
+        <br>
+        <br>
+        <br>
+        <img src="national_geographic_magazine_logo.png" alt="" id="img_isto">
+        <p id="isto_p_1">© direitos reservados a Vasco Costa, numero 2042618,</p>
+        <br>
+        <p id="isto_p_1">Trabalho realizado no ambito da disciplica de Design e Hipermédia 2019/2020</p>
+        <br>
+        <br>
+        <br><br><br>
+        <p id="img_isto">Site inspirado na versão real do National Geographic 22/01/2020</p>
+    </div>
+<!--
+    <header class="headerbg1">
+        <section class="title ir"><h1>Lean Analytics Workshop</h1></section>
+    </header>
+    <header class="headerbg2">
+            <section class="title ir"><h1>Lean Analytics Workshop</h1></section>
+    </header>
+
+    -->
+    
 </body>
 </html>
