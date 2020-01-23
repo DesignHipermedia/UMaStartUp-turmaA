@@ -8,19 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fullscreen_navigation.css">
     <title>
         National Geographic
     </title>
     <link rel="icon" href="logo_200.png">
 </head>
 <body style="overflow:auto">
+
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+            <a id="animal" href="tigers.html">ANIMAL</a>
+            <a id="nature" href="puma.html">NATURE</a>
+            <a id="travel" href="lioness.html">TRAVEL</a>
+            <a id="history" href="history.html">HISTORY</a>
+            <a id="menuu" href="index.html">MENU</a>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+    </script>
+
     <div class="header">
         <span>  <!-- span é para fazer agrupamentos, "child elements"-->
-            <a href="index.html">
-                <img src="national_geographic_magazine_logo.png" alt="" id="img_header">
-            </a>
-        </span>
+            <div class="grupo5">
+                <div class="column5 left5">
+                    <a href="index.html">
+                        <img src="national_geographic_magazine_logo.png" alt="" id="img_header">
+                    </a>
+                </div>
+                <div class="column5 middle5">
+                <p style="cursor:pointer;color: rgb(0, 0, 0);" onclick="openNav()" id="navigation_header" >&#9910; Menu</p>  <!--https://www.w3schools.com/charsets/ref_emoji.asp-->
+                </div>
+            </div>
+        </span>    
     </div>
+
 
     
     <div class="bg1"><!-- Primeiro background-->
@@ -43,7 +73,7 @@
                     </span>
                 </a>
 
-                <a class="card1" href="tigers.html">
+                <a class="card1" href="puma.html">
                     <span>
                         <img id="img1" src="caracal.png" alt="">
                         <span class="card1-title">
@@ -54,7 +84,7 @@
 
                 
 
-                <a class="card1" href="tigers.html">
+                <a class="card1" href="lioness.html">
                     <span>
                         <img id="img1" src="cheetah.png" alt="">
                         <span class="card1-title">
@@ -63,7 +93,7 @@
                     </span>
                 </a>
 
-                <a class="card1" href="#">
+                <a class="card1" href="history.html">
                     <span>
                         <img id="img1" src="lioness.png" alt="">
                         <span class="card1-title">
@@ -124,14 +154,14 @@
 
                 <a class="card2" href="#">
                     <span>
-                        <img id="img2" src="homepage_bg1_400x600.jpg" alt="">
+                        <img id="img2" src="908x1212-Q70_5be9f17610627c8031095308292dea03.jpg" alt="">
                         
                     </span>
                 </a>
 
                 <a class="card2" href="#">
                     <span>
-                        <img id="img2" src="homepage_bg1_400x600.jpg" alt="">
+                        <img id="img2" src="908x1212-Q70_440dbfa5b330cb03bdff9544d1484cac.jpg" alt="">
                         
                     </span>
                 </a>
@@ -140,21 +170,21 @@
 
                 <a class="card2" href="#">
                     <span>
-                        <img id="img2" src="homepage_bg1_400x600.jpg" alt="">
+                        <img id="img2" src="primalsurvivor.png" alt="">
                         
                     </span>
                 </a>
 
                 <a class="card2" href="#">
                     <span>
-                        <img id="img2" src="homepage_bg1_400x600.jpg" alt="">
+                        <img id="img2" src="livefreeordie.png" alt="">
                         
                     </span>
                 </a>
 
                 <a class="card2" href="#">
                     <span>
-                        <img id="img2" src="homepage_bg1_400x600.jpg" alt="">
+                        <img id="img2" src="908x1212-Q70_7b7396b1506a50bc9d1f2cd1a0ee7892.jpg" alt="">
                         
                     </span>
                 </a>
@@ -162,7 +192,7 @@
 
                 <a class="card2" href="#">
                     <span>
-                        <img id="img2" src="homepage_bg1_400x600.jpg" alt="">
+                        <img id="img2" src="908x1212-Q70_ee30f1237034e8c4cb7aee38882dd606.jpg" alt="">
                         
                     </span>
                 </a>

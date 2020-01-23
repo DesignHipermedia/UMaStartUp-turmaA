@@ -1,9 +1,9 @@
 
 /*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*/
 body, html {
-    margin: 0;
     height: 100%;
     background-color: black;
+    margin: 0px;
   }
   
   .bg {

@@ -77,6 +77,8 @@ body, html {
 
 
 
+
+
   /*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*/
   h1 {
 
@@ -242,7 +244,7 @@ body, html {
     margin: 0;
   }
   
-  .card1:hover, .card1:focus {   
+  .card1:hover, .card1:focus {  
     background: rgba(92, 92, 92, 0);
     -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
     -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
@@ -261,7 +263,7 @@ body, html {
   }
 
   #img1:hover{
-    opacity: 70%;
+    opacity: 90%;
     
   }
   
