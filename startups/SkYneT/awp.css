@@ -17,7 +17,7 @@
   -ms-grid-column-span: 4;
   grid-column: 3/7;
   text-align: left;
-  color: #135592;
+  background-color: rgba(255, 255, 255, 0.1);
   font-size: larger;
   font-weight: bolder;
   background-color: rgba(255, 255, 255, 0.1);
