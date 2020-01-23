@@ -7,6 +7,7 @@ body, html{
 }
 
 /*  */
+
 .user-bar{
     width: 100vw;
     height: 35px;
@@ -52,6 +53,7 @@ body, html{
 }
 
 /*  */
+
 header{
     height: 250px;
     width: 1440px;
@@ -89,15 +91,27 @@ header{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
+
 .btnhead:hover{
     background-color: black;
     color: lightgray;
     /* border-bottom: 4px lightskyblue solid; */
 }
+.btnheadon{
+    height: 50px;
+    width: 175px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: lightgray;
+    /* border-bottom: 4px lightskyblue solid ; */
+}
 
 /*  */
+
 .main{
-    height: 1000px;
+    height: 1100px;
     width: 1440px;
     background-color: white;
     margin: 0 225px;
@@ -111,8 +125,8 @@ header{
 }
 .top-right {
     position: absolute;
-    top: 1px;
-    right: 66px;
+    top: 8px;
+    right: 16px;
     background-color: red;
     color:white;
     padding: 5px;
@@ -122,9 +136,7 @@ header{
     height: 450px;
     width: 480px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 0px;
+    margin: 50px;
     /* border: 1px solid black; */
 }
 .itemimg, .itembtn{
@@ -135,54 +147,7 @@ header{
     height: 50px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.header1 {
-    position: relative;
-    font-family: sans-serif;
-    width: 1440px;
-    height: 450px;
-    display: flex;
-    overflow: hidden;
-}
-.header1 .com-imagem,
-.header1 .sem-imagem {
-    position: relative;
-    width: 720px;
-    background: #214555;
-    overflow: hidden;
-}
-.header1 .com-imagem {
-    background: url(mobo.jpg);
-    background-size: cover;
-}
-.header1 .com-imagem h2,
-.header1 .sem-imagem h2 {
-    position: absolute;
-    line-height: 150px;
-    white-space: nowrap;
-    font-size: 12em;
-}
-.header1 .com-imagem h2 {
-    color: white;
-    left: 100%;
-    animation: animate-text 20s linear infinite;
-}
-.header1 .sem-imagem h2 {
-    color: white;
-    color: transparent;
-    -webkit-text-stroke: 2px;
-    -webkit-text-stroke-color: white;
-    
-    animation: animate-text 20s linear infinite;
-}
-@keyframes animate-text {
-    0% {
-        transform: translateX(0);
-    }
 
-    100% {
-        transform: translateX(-100%)
-    }
-}
 /* .itembtn:hover::before{
     content: "COMPRAR"
 }  */
@@ -190,6 +155,7 @@ header{
 
 
 /*  */
+
 .foot2{
     height: 200px;
     width: 1440px;
@@ -226,7 +192,7 @@ footer{
 
 #anim6 {
     position: relative;
-    border: solid 1px green;
+    border: 1px solid green;
     transition-duration: .4s;
 }
 
