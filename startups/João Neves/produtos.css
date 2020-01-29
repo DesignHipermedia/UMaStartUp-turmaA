@@ -1,0 +1,172 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.bg{
+    background-color: red;
+    background-size: auto;
+    padding-bottom: 0px;
+}
+.container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-columns: repeat(4,1fr);
+
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+
+    margin: 0 10px;
+    background: red;
+}
+/* Header and footer */
+.geral{
+    padding-bottom: 45px;
+}
+.HF{
+    padding: 5px;
+}
+.main{
+    padding: 50px;
+}
+.header{
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 30px;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+}
+a{
+    text-decoration: none;
+}
+.maincontent{
+    background-color: #ff2121;
+    color: black;
+    font-size: 30px;
+    border: black 2px solid;
+    font-family: 'Open Sans', sans-serif;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    color: white;
+    font-size: 30px;
+    border: black 2px solid;
+    font-family: 'Open Sans', sans-serif;
+    align-content: center;
+}
+.box div{
+    margin-top: -70px;
+    line-height: 0;
+    text-align: center;
+    text-shadow:1px 1px 2px black;
+}
+.box1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+
+.box2{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    
+}
+.box3{
+    grid-row: 2/3;
+    grid-column: 3/4;
+    
+}
+.box4{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    
+}
+.box5{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    
+}
+.box6{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    
+}
+.texto{
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+.nav{
+    /* padding: 50px; */
+    background-color:  lightsalmon;
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    grid-column: 4;
+    grid-row: 2;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    font-family: 'Open Sans', sans-serif;
+}
+.qualquercoisa{
+    background-color: #ff2121;
+    grid-column: 4;
+    grid-row: 3/5;
+    border: 2px black solid;
+    text-align: center;
+}
+.footer{
+    background-color: darkred;
+    color: white;
+    font-size: 30px;
+    grid-column: 1/-1;
+    grid-row: -1;
+    text-align: center;
+    border: black 2px solid;
+    font-family: 'Open Sans', sans-serif;
+}
+.smallbox1{
+    display: grid;
+    grid-column: 2/4;
+    grid-row: 2;
+}
+/* imagens */
+.banner{
+    background-image: url('banner.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+}
+.fundo{
+    background-image: url('fundo.jpg');
+    background-repeat: no-repeat;
+    height:300px;
+    width: auto;
+    grid-row: 2;
+    grid-column: 1/4;
+}
+
+/* animacoes*/
+#anim1{
+    transition-duration: 200ms;
+}
+#anim1:hover{
+    background-color: transparent;
+    color: red;
+}
+a{
+    color: white;
+}
+  
+  a:hover {
+    color: red;
+}
+  
+  a:active {
+    color: green;
+}

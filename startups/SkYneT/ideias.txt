@@ -1,0 +1,5 @@
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_expanding_grid
+
+passar o rato por cima do nome da arma mostra uma miniatura
+
+ao clicares para ver a pagina de uma das armas, usas um botao "comprar skin" e abre outro separador para o mercado da steam

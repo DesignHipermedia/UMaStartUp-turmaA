@@ -1,0 +1,245 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: darkred;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*  */
+
+.user-bar{
+    width: 100vw;
+    height: 35px;
+    background-color: black;
+    color:white;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    
+}
+.search-logo{
+    height: 30px;
+    margin-right: 22.5vw;
+}
+.ub-search{
+    width: 30vw;
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    padding-left: 7px;
+    height: 24px;
+    border-radius: 11px;
+}
+
+
+.user-logo{
+    height: 30px;
+    margin-right: 35px;
+    margin-left: 5px;
+}
+.btn-log{
+    background-color: black;
+    color: white;
+    border: solid 1px white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 28px;
+    border-radius: 14px;
+    width: 170px;
+}
+.btn-log:hover{
+    background-color: white;
+    color: black;
+}
+
+/*  */
+
+header{
+    height: 250px;
+    width: 1440px;
+    margin: 0 225px;
+}
+.headertop{
+    height: 200px;
+    background-color: white;
+    padding-left: 36px;
+    display: flex;
+    flex-direction: row;
+}
+.ht-left, .ht-right{
+    width: 720px;
+}
+.ht-right{
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+.quote-logo{
+    height: 35px;
+}
+.headerbot{
+    height: 50px;
+    background-color: white;
+    width: 1440px;
+    text-align: center;
+}
+.btnhead{
+    height: 50px;
+    width: 175px;
+    border: none;
+    background-color: lightgray;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+.btnhead:hover{
+    background-color: black;
+    color: lightgray;
+    /* border-bottom: 4px lightskyblue solid; */
+}
+.btnheadon{
+    height: 50px;
+    width: 175px;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    background-color: black;
+    color: lightgray;
+    /* border-bottom: 4px lightskyblue solid ; */
+}
+
+/*  */
+
+.main{
+    height: 1100px;
+    width: 1440px;
+    background-color: white;
+    margin: 0 225px;
+}
+.container{
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 50px;
+
+}
+.top-right {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    background-color: red;
+    color:white;
+    padding: 5px;
+}
+.item{
+    position: relative;
+    height: 450px;
+    width: 480px;
+    text-align: center;
+    margin: 50px;
+    /* border: 1px solid black; */
+}
+.itemimg, .itembtn{
+    width: 350px;
+    height: 350px;
+}
+.itembtn{
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* .itembtn:hover::before{
+    content: "COMPRAR"
+}  */
+
+
+
+/*  */
+
+.foot2{
+    height: 200px;
+    width: 1440px;
+    background-color: lightgray;
+    text-align: center;
+    margin: 0 225px;
+    display: flex;
+    flex-direction: row;
+}
+.sponsors, .contacts{
+    width: 720px;
+}
+.sponsorimg{
+    width: 100px
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.slogo{
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+}
+footer{
+    height: 35px;
+    background-color: black;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#anim6 {
+    position: relative;
+    border: 1px solid green;
+    transition-duration: .4s;
+}
+
+#anim6::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 0 0;
+    border-color: transparent transparent green transparent;
+    transition-duration: .4s;
+}
+#anim6::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 0 0;
+    border-color: transparent green transparent transparent;
+    transition-duration: .4s;
+}
+
+#text {
+    transition-duration: .4s;
+}
+
+#anim6:hover>text {
+    padding-right: 30px;
+}
+
+#anim6:hover::before {
+    border-width: 0 0 25px 25px;
+    
+}
+
+#anim6:hover::after {
+    border-width: 0 25px 25px 0;
+}
+#anim6 span::before{
+    content: '€€€';
+}
+#anim6:hover span::before{
+    content: 'COMPRAR';
+}
