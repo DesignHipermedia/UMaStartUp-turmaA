@@ -1,0 +1,389 @@
+
+
+/*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*//*BACKGROUND AUTO.AJUSTAVEL*/
+body, html {
+  /*height: 100%;*/
+  margin: 0;
+}
+.bg1 {
+  /* The image used */
+  background-image: url("1080pZhayynn_James_2016_NationalGeographic_Photographer_of_the_year.png");
+  background-attachment: fixed; /*MAGIA :D*/
+  /*Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg2 {
+  /* The image used */
+  background-image: url("background_2.png");
+  
+  /* Full height */
+  height: 1080px; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+.bg3{
+  background-image: url("wallhaven-0pomxp.jpg");
+  background-attachment: fixed; /*MAGIA x2 :D*/
+  /* Full height */
+  /*height: 1200px; */  /*porcaria a buggar*/
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*//*HEADER*/
+.header {
+  margin-left: 10px;
+  height: 50px;
+  
+  background: rgb(255, 255, 255);
+  color: white;
+  font-size: 10px;
+}
+#img_header{
+  height: 50px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*//*TITLES*/
+  h1 {
+
+    font-size: 54px;
+    letter-spacing: 4.2px;
+    font-family: 'GeoBrandBold', 'CenturyGothic', AppleGothic, Gill Sans, Gill Sans MT, sans-serif;
+    text-transform: uppercase;
+    font-weight: 550;
+    line-height: 1.19;
+    margin: 0; 
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    
+
+    text-align: center; 
+  }
+  h3{
+    font-family: 'GeoEditRegular', 'Franklin Gothic Medium', 'Franklin Gothic', 'ITC Franklin Gothic', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0;
+    letter-spacing: .1px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+
+    text-align: center;
+  }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*"footer*/  /*"footer*/  /*"footer*/
+  .isto{
+    height: 200px;
+    background: rgb(0, 0, 0);
+    color: white;
+    font-size: 10px;
+    margin-top: -50px;
+    padding: 0 0 100px;
+    position: relative;
+  }
+  #img_isto{
+    position: absolute;
+    /*left: 300px;*/
+    left: 25%;
+    height: 50px; 
+  }
+
+  @media (max-width: 700px) {
+    #img_isto {
+      left:5%;
+    }
+  }
+  
+
+  #isto_p_1{
+    position: absolute;
+    left: 50%
+  }
+
+
+
+
+
+
+
+
+
+
+
+/*CONTEUDO DO PRIMEIRO BACKGROUND*//*CONTEUDO DO PRIMEIRO BACKGROUND*//*CONTEUDO DO PRIMEIRO BACKGROUND*/
+  .container1 {
+    max-width: 1100px;  /*Espaço da esquera para a direita |vaziu|card|card|card|vaziu|*/
+    margin: 0 auto;  /*centrar conteudo*/
+  }
+  
+  .cards1 {  
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 1.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .card1 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    background: #fefff9;
+    color: #363636;
+    text-decoration: none;
+    -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  @media (max-width: 700px) {
+    .card1 {
+      width: 100%;
+    }
+  }
+  @media (min-width: 700px) {
+    .card1 {
+      max-width: 320px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .card1:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: 980px) {
+    .card1:nth-child(even) {
+      margin-right: 20px;
+    }
+    .card1:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  .card1 span {  /*barra verde*/
+    display: block;
+  }
+ 
+  
+  .card1 .card-header:hover, .card1 .card1-header:focus {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  .card1 .card1-title {
+    background: rgba(157, 187, 63, 0.85);
+    padding: 3.2% 0% 0.5% 0;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  .card1 .card1-title h3 {
+    font-size: 1.2em;
+    line-height: 1.2;
+    padding: 0 3.5%;
+    margin: 0;
+  }
+  
+  .card1:hover, .card1:focus {  
+    background: rgba(92, 92, 92, 0);
+    -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  }
+  .card1:hover .card1-title, .card1:focus .card1-title {
+    background: rgba(157, 187, 63, 0.95);
+  }
+  .card1:hover .card1-meta, .card1:focus .card1-meta {
+    max-height: 1em;
+  }
+  
+  #img1 {
+    max-width: 100%;
+
+  }
+
+  #img1:hover{
+    opacity: 90%;
+    
+  }
+  
+ 
+  
+  * {
+    -moz-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -moz-transform;
+    -o-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -o-transform;
+    -webkit-transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, -webkit-transform;
+    transition-property: background-color, border-color, box-shadow, color, opacity, text-shadow, transform;
+    -moz-transition-duration: 0.2s;
+    -o-transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s;
+    transition-duration: 0.2s;
+    -moz-transition-timing-function: linear;
+    -o-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    transition-timing-function: linear;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  /*CONTEUDO DO TERCEIRO BACKGROUND*/  /*CONTEUDO DO TERCEIRO BACKGROUND*/  /*CONTEUDO DO TERCEIRO BACKGROUND*/
+
+
+
+
+
+  
+
+
+
+   /*metodo3*/ 
+
+   .cards2 {  
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    padding: 1.5%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .card2 {
+    position: relative;
+    color: #363636;
+    text-decoration: none;
+    -moz-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0 0 8px 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+  @media (max-width: 700px) {
+    .card2 {
+      width: 30%;  /*coloca 3 colunas, 2 andares! quando minimizado  no minimo*/
+      
+    }
+  }
+  @media (min-width: 700px) {
+    .card2 {
+      max-width: 150px;
+      margin-right: 10px;
+      margin-left: 10px;
+      margin-bottom: 20px;
+    }
+    .card2:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: 980px) {
+    .card2:nth-child(even) {
+      margin-right: 20px;
+    }
+    .card2:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+  
+  
+  .card2 .card-header:hover, .card2 .card2-header:focus {
+    background-color: rgba(255, 255, 255, 0);
+  }
+  
+ 
+  
+  .card2:hover, .card2:focus {   
+    background: white;
+    -moz-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 0px 20px 0px;
+  }
+ 
+  .card2:hover .card2-meta, .card2:focus .card2-meta {
+    max-height: 1em;
+  }
+  
+  #img2 {
+    max-width: 100%;
+  }
+
+
+
+
+
+
+
