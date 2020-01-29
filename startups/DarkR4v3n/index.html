@@ -4,20 +4,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/png" href="https://static-dm.akamaized.net/stella/prod/img/ac_logo-mobile_ncsa.png">
+    <link rel="shortcut icon" type="image/png" href="img/Menu_Logo_smallsize.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Assassin's Creed Odyssey</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: #cda279;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #cda279;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f0f0f0;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+    background-color: #ffffff;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f0f0f0;
+   color: white;
+   text-align: center;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+.fa-youtube {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+</style>
 </head>
 <body>
-    <div class="container">
-        -home <!--destaques/latest updates/dlcs/story quests/packs/merch/....-->
-        -game info <!--trailer/escolhas/choose faith/gameplay/abilities/....-->
-        -season pass <!--season pass trailer/content/gold edition-->
-        -dlc
-            -dlc1 <!--3eps/trailers-->
-            -dlc2 <!--3eps/trailers-->
-        -news <!--news(aproveitar algumas que vao estar expostas no Home page)-->
-        -photo mode <!--galeria com fotos de gameplay-->
+
+<ul>
+  <li><a class="active" href="index.html"><img src="img/Menu_Logo_normalsize.jpeg" style="width: 75px; height: 15px; alt: Logo;"></a></li>
+  <li><a href="info.html">Game Info</a></li>
+  <li><a href="seasonpass.html">Season Pass</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">DLC</a>
+    <div class="dropdown-content">
+      <a href="TCFB.html">The Curse of the First Blade</a>
+      <a href="TFA.html">The Fate of Atlantis</a>
     </div>
-    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora, harum voluptatibus itaque porro recusandae dolorem eligendi. Necessitatibus, similique ipsa sequi quos iste dolore veritatis quae facere aut aspernatur magnam deleniti.
+  </li>
+  <li><a href="galery.html">Galery</a></li>
+</ul>
+
+
+    <h3>Dropdown Menu inside a Navigation Bar</h3>
+    <p>Hover over the "Dropdown" link to see the dropdown menu.</p>
+
+    <div class="footer">
+      <a href="https://www.facebook.com/ubisoft" class="fa fa-facebook"></a>
+      <a href="https://twitter.com/Ubisoft" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/ubisoft/" class="fa fa-instagram"></a>
+      <a href="https://www.youtube.com/user/ubisoft" class="fa fa-youtube"></a>
+    </div>
+
 </body>
 </html>

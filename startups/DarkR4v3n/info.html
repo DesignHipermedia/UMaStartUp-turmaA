@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="img/Menu_Logo_smallsize.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Assassin's Creed Odyssey</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a, .dropbtn {
+    display: inline-block;
+    color: #cda279;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #ffffff;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #cda279;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f0f0f0;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+    background-color: #ffffff;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #f0f0f0;
+   color: white;
+   text-align: center;
+}
+
+.fa {
+  padding: 5px;
+  font-size: 15px;
+  width: 15px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+.fa-youtube {
+  background: black;
+  color: white;
+}
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(http://vikenation.com/library/images/demo7374_bigteams_2485/teamphotos/standard/2015BVarsitySoccer.jpg);
+
+#main {
+    width: 100%;
+    padding:0;
+}
+
+.content-asset p {
+    margin:0 auto;
+}
+.breadcrumb {
+    display:none;
+}
+
+.margin-top-10 {
+    padding-top:10px;
+}
+.margin-bot-10 {
+    padding-bottom:10px;
+}
+
+#parallax-world-of-ugg h1 {
+    font-family:'Oswald', sans-serif;
+    font-size:24px;
+    font-weight:400;
+    text-transform: uppercase;
+    color:black;
+    padding:0;
+    margin:0;
+}
+#parallax-world-of-ugg h2 {
+    font-family:'Oswald', sans-serif;
+    font-size:70px;
+    letter-spacing:10px;
+    text-align:center;
+    color:white;
+    font-weight:400;
+    text-transform:uppercase;
+    z-index:10;
+    opacity:.9;
+}
+#parallax-world-of-ugg h3 {
+    font-family:'Oswald', sans-serif;
+    font-size:14px;
+    line-height:0;
+    font-weight:400;
+    letter-spacing:8px;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+}
+
+#parallax-world-of-ugg h4 {
+    font-family:'Oswald', sans-serif;
+    font-size:8px;
+    line-height:0;
+    font-weight:400;
+    letter-spacing:8px;
+    text-align: center;
+    text-transform: uppercase;
+    color:#cda279;
+}
+#parallax-world-of-ugg h6 {
+    font-family:'Oswald', sans-serif;
+    font-size:14px;
+    font-weight:400;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    padding:0;
+    margin:0;
+}
+#parallax-world-of-ugg p {
+    font-family:'Source Sans Pro', sans-serif;
+    font-weight:400;
+    font-size:14px;
+    line-height:24px;
+}
+.first-character {
+    font-weight:400;
+    float: left;
+    font-size: 84px;
+    line-height: 64px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+#parallax-world-of-ugg .title {
+    background: white;
+    padding: 60px; 
+    margin:0 auto; 
+    text-align:center;
+}
+#parallax-world-of-ugg .title h1 {
+    font-size:35px;
+    letter-spacing:8px;
+}
+
+#parallax-world-of-ugg .block {
+    background: white; 
+    padding: 60px; 
+    width:820px; 
+    margin:0 auto; 
+    text-align:justify;
+}
+#parallax-world-of-ugg .block-gray {
+    background: #f2f2f2;
+    padding: 60px;
+}
+#parallax-world-of-ugg .section-overlay-mask {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: black; 
+    opacity: 0.70;
+}
+
+#parallax-world-of-ugg .parallax-one {
+    padding-top: 200px;
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-accolade-trailer_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+}
+#parallax-world-of-ugg .parallax-two {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-world-of-danger_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+#parallax-world-of-ugg .parallax-three {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-order_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+}
+#parallax-world-of-ugg .parallax-four {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-choose-your-fate_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-five {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-epic-world_emea.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-six {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-sail-fight_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-seven {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-sail-fight_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-eight {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-sail-fight_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-nine {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-sail-fight_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+}
+
+#parallax-world-of-ugg .parallax-ten {
+    padding-top: 200px; 
+    padding-bottom: 200px; 
+    overflow: hidden; 
+    position: relative; 
+    width: 100%; 
+    background-image: url(https://ubistatic19-a.akamaihd.net/marketingresource/en-gb/assassins-creed/assassins-creed-odyssey/assets/images/ac_gameinfo_overview-sail-fight_emea.jpg); 
+    background-attachment: fixed; 
+    background-size: cover; 
+    -moz-background-size: cover; 
+    -webkit-background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: top center;
+}
+
+
+#parallax-world-of-ugg .line-break {
+    border-bottom:1px solid black; 
+    width: 150px; 
+    margin:0 auto;
+}
+
+@media screen and (max-width: 959px) and (min-width: 768px) {
+  #parallax-world-of-ugg .block {
+      padding: 40px; 
+      width:620px;
+    }
+}
+@media screen and (max-width: 767px) {
+  #parallax-world-of-ugg .block {
+      padding: 30px; 
+      width:420px;
+    }
+  #parallax-world-of-ugg h2 {
+      font-size:30px;
+    }
+  #parallax-world-of-ugg .block {
+      padding: 30px;
+    }
+  #parallax-world-of-ugg .parallax-one, #parallax-world-of-ugg .parallax-two, #parallax-world-of-ugg .parallax-three {
+      padding-top:100px; 
+      padding-bottom:100px;
+    }
+}
+@media screen and (max-width: 479px) {
+  #parallax-world-of-ugg .block {
+      padding: 30px 15px;
+      width:290px;
+    }
+}
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+  background-color: black;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="index.html"><img src="img/Menu_Logo_normalsize.jpeg" style="width: 75px; height: 15px; alt: Logo;"></a></li>
+  <li><a class="active" href="info.html">Game Info</a class="active"></li>
+  <li><a href="seasonpass.html">Season Pass</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">DLC</a>
+    <div class="dropdown-content">
+      <a href="TCFB.html">The Curse of the First Blade</a>
+      <a href="TFA.html">The Fate of Atlantis</a>
+    </div>
+  </li>
+  <li><a href="galery.html">Galery</a></li>
+</ul>
+
+<div id="parallax-world-of-ugg">
+  
+    <section>
+      <div class="title">
+        <h4>ANCIENT GREECE 431BCE</h4>
+        <h1>Live the Epic Odyssey of a Legendary Greek Hero</h1>
+        <h5>A golden age of gods, heroes, beauty and war.</h5>
+      </div>
+    </section>
+    
+    <section>
+        <div class="parallax-one">
+          <h2>Break the prophecy and choose your destiny</h2>
+        </div>
+    </section>
+    
+    <section>
+      <div class="parallax-two">
+        <h2>A world of danger lies in your path</h2>
+        <h6>Get prepared to overcome the challenges and discover the adventures ancient Greece has in store</h6>
+      </div>
+    </section>
+    
+    <section>
+      <div class="parallax-three">
+        <h2>Female Officials Are Told To Lose Weight and To Keep Make Up Subtle</h2>
+      </div>
+    </section>
+    
+    <section>
+        <div class="parallax-four">
+          <h2>No Female Has Officiated A High School Soccer State Championship Since 1997</h2>
+        </div>
+    </section>
+    <section>
+        <div class="parallax-five">
+          <h2>Female Refs Often Have To Go Out Of State To Get The Games They Need To Advance</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="parallax-six">
+          <h2>No Female Refs Were Part Of The men's 2014 fifa world cup</h2>
+        </div>
+    </section>
+      
+    </div>
+
+    <div class="footer">
+        <a href="https://www.facebook.com/ubisoft" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/Ubisoft" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/ubisoft/" class="fa fa-instagram"></a>
+        <a href="https://www.youtube.com/user/ubisoft" class="fa fa-youtube"></a>
+    </div>
+
+</body>
+</html>
