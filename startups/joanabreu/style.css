@@ -1,0 +1,806 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* ## Retirar definições que vêm por defeito ## */
+
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+html {
+    box-sizing: border-box;
+    }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    }
+
+a {
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+  }
+
+ul {
+    list-style: none;
+    }
+
+/* ## Definições gerais ## */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color:'Roboto', sans-serif;
+    line-height: 1.6;
+    /* Grelha base */
+    display: grid;
+    grid-template-rows: 3rem 12rem 20rem 20rem 3rem;
+    grid-template-columns: repeat(2, 2fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    background-color: #111;
+    z-index: 10;
+    display: inline-flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-between;
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
+}
+
+/*logo*/
+#logo {
+    min-height: 50px;
+    height: 100%;
+    margin-left: 2rem;
+}
+
+/*menubar*/
+nav {
+      font-family: monospace;
+      display: flex;
+      background: violet;
+  }
+  
+ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+  }
+  
+li {
+      background: violet;
+      display: flex;
+      align-self: stretch;
+      transition-duration: 0.5s;
+      margin:0;
+      padding: 0 1rem;
+  }
+    
+    li a {
+    color: #fff;
+    align-self: center;
+    }
+  
+    li:hover,
+    li:focus-within {
+      background: rgb(0, 255, 200);
+      cursor: pointer;
+    }
+  
+    li:focus-within a {
+    outline: none;
+    }
+  
+.dropdown {
+      background: orange;
+      visibility: hidden;
+      opacity: 0;
+      min-width: 5rem;
+      position: fixed;
+      transition: all 0.5s ease;
+      margin-top: 3rem;
+      margin-left: -1rem;
+      display: block;
+  }
+  
+  ul li:hover > .dropdown,
+  ul li:focus-within > .dropdown,
+  .dropdown:hover,
+  .dropdown:focus {
+     visibility: visible;
+     opacity: 1;
+  }
+  
+    .dropdown li {
+        display:block;
+        clear: both;
+        width: 100%;
+    } 
+
+
+/* Slider de imagens */
+
+#welcome_slider {
+    grid-column: 1 /span 2;
+    grid-row: 2 / 3;
+}  
+    #slider {
+        overflow: hidden;
+       
+        width: 100%; /* estas duas influenciam o overlap do texto*/
+        height: auto;
+        
+        }
+            #slider figure {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+            }
+                .image_container {
+                width: 20%;
+                float: left;
+                max-height: 12rem;
+                }
+                    .image_container img {
+                        object-fit: cover;
+                        width: 100%;
+                        margin-top: -40%;
+                        opacity: 0.6;
+                    }
+                
+    
+        @keyframes slider {
+            0% {
+                left: 0;
+            }
+            20% {
+                left: 0;
+            }
+            25% {
+                left: -100%;
+            }
+            45% {
+                left: -100%;
+            }
+            50% {
+                left: -200%;
+            }
+            70% {
+                left: -200%;
+            }
+            75% {
+                left: -300%;
+            }
+            95% {
+                left: -300%;
+            }
+            100% {
+                left: -400%;
+            }
+            }
+
+        /* para overlap do texto sobre as imagens */
+        .container_overlap {
+            position: relative;
+        }
+
+        #welcome_text {
+            position: absolute;
+            left: 0;
+            top: 20%;
+            text-align: center;
+        }
+
+      
+      .item {
+        /* Padding is used for smaller screens */
+        padding: 0 30px 0 30px;
+        text-align: center;   
+        }
+    
+        .img-responsive {
+            max-width: 100%;
+            height: auto;
+            display: block;
+          }
+          
+          h1 {
+            text-align: center;
+            font-family: "Oswald", sans;
+            font-size: 1.8rem;
+            font-weight: normal;
+            line-height: 2.5rem;
+          }
+          
+          h3 {
+            font-size: 0.8rem;
+            line-height: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px; /* Smaller headers look better with spacing */
+          }
+
+      /*section cards*/
+
+      .card_selection {
+        grid-column: 1 /span 2;
+        grid-row: 3 / 5;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    
+    .text--medium {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #ecf0f1;
+    }
+    
+    .card {
+        background-color: #39393b;
+        transition: all 0.3s ease 0s;
+        margin: 1rem;
+        height: 20rem;
+    }
+    
+    .card:hover {
+        transform: translateY(-7px);
+    }
+    
+    .card__image-container {
+        height: 20rem;
+        
+    }
+    
+    .card img {
+        object-fit: cover;
+        width: 30rem;
+        height: 60%;
+    }
+    
+    .card__content {
+        padding: 20px;
+    }
+    
+    .card__title {
+        margin-bottom: 20px;
+    }
+    
+    .card__info {
+        display: flex;
+        align-self: end;
+        align-items: center;
+        font-size: 1.2rem;
+    }
+    
+    .card__link {
+        margin-left: auto;
+        padding: 5px 20px;
+        background-color: #303032;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    
+
+footer {
+   background-color: burlywood;
+   grid-row: 5 / span 1;
+   grid-column: 1 / span 2;
+}
+
+#social-media-icons a {
+    padding: 0 0.3rem;
+}
+
+.inline-block{
+    display: inline-block;
+    padding: 0.6rem;
+}
+
+#contacts{
+    float: right;
+}
+
+/* Galeria */
+
+#galeria_main {
+    grid-column: 1 /span 2;
+    grid-row: 2 / 5;
+    display: flex;
+    flex-flow: wrap;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.flip{
+    position: relative;
+    display: inline-block;
+    width: 210px;
+    margin: 1rem;
+}
+.flip .front,
+.flip .back{
+    display: block;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-duration: .5s;
+    transition-property: transform, opacity;
+    width: inherit;
+    background-size: cover !important;
+    background-position: center !important;
+    height: 210px;
+    background-color: #313131;
+    padding: 2em 1em;
+    border-radius: 10px;
+    color: white;
+}
+.flip .front{
+    transform: rotateY(0deg);
+}
+.flip .back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transform: rotateY(-180deg);
+}
+.flip:hover .front{
+    transform: rotateY(180deg);
+}
+.flip:hover .back{
+    opacity: 1;
+    transform: rotateY(0deg);
+}
+.flip .back p{
+    font-size: 0.9125rem;
+    line-height: 160%;
+    color: #999;
+}
+
+/* Estágios de desenvolvimento*/
+.main_est_desenvolv{
+    grid-column: 1 /span 2;
+    grid-row: 3 / 5;
+}
+
+/* Contactos*/
+
+.contact-section{
+    background: #313840;
+    padding: 80px 0;
+    text-align: center;
+    grid-column: 1 /span 2;
+    grid-row: 2 / 5;
+  }
+  
+  .inner-width{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .contact-section h1{
+    font-size: 20px;
+    color: #888;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 400;
+  }
+  
+  .name,.email,.message{
+    background: none;
+    border:none;
+    outline: none;
+    border-bottom: 1px solid;
+    color: #888;
+    padding: 10px 6px;
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+  
+  .name{
+    float: left;
+    width: 270px;
+  }
+  
+  .email{
+    float: right;
+    width: 270px;
+  }
+  
+  .message{
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  .contact-section button{
+    background: none;
+    color: #70a1ff;
+    border: 1px solid #70a1ff;
+    padding: 12px 40px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.4s linear;
+    cursor: pointer;
+  }
+  
+  .contact-section button:hover{
+    background: #70a1ff;
+    color: #fff;
+  }
+
+
+/* ## Media queries ## */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        grid-template-rows: 10rem 20rem 60rem 5rem;
+        grid-template-columns: none;
+        grid-row-gap: 18px;
+        grid-column-gap: 0px;
+    }
+
+    header {
+        grid-row: 1 / 2;
+    }
+
+    #logo {
+        object-fit: contain;
+        margin: 0 auto;
+        max-height: 100px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu{
+        justify-self: center;
+    }
+    ul li {
+        padding:1rem;
+    }
+
+    .dropdown {
+        margin-top: 2.2rem;
+    }
+
+    #welcome_slider {
+        grid-row: 2 / 3;
+        }
+
+                #slider figure {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                animation: 20s slider infinite;
+                }
+                    .image_container {
+                    width: 20%;
+                    float: left;
+                    max-height: 18rem;
+                    max-width: 100%;
+                    }
+                        .image_container img {
+                            object-fit: cover;
+                            height: 100%;
+                            margin-top: 0;
+                        }
+
+    #welcome_text {
+        top: 10%;
+    }
+
+    .card_selection {
+        grid-row: 3/4;
+        display: flex;
+        flex-flow: column;
+        justify-self: center;
+      }
+
+      .card {
+        height: 12rem;
+    }
+
+      .card__image-container {
+        height: 8rem;
+    }
+    
+    .card img {
+        object-fit: cover;
+        width: 20rem;
+        height: 60%;
+    }
+
+    footer {
+        background-color: burlywood;
+        grid-row: 4 / span 1;
+     }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+        grid-template-rows: 3rem 20rem 30rem 30rem 3rem;
+        grid-template-columns: none;
+        grid-row-gap: 18px;
+        grid-column-gap: 0px;
+    }
+
+    header {
+        grid-row: 1 / 2;
+    }
+
+   #logo {
+        margin: 0;
+        margin-left: 2rem;
+        object-fit: contain;
+        max-height: 60px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    nav {
+        width: 60%;
+        justify-content: stretch;
+    }
+
+    .menu{
+        justify-self: stretch;
+        width:100%;
+    }
+    ul li {
+        padding:0 5%;
+    }
+
+    .dropdown {
+        margin-top: 3rem;
+    }
+
+    #welcome_slider {
+        grid-row: 2 / 3;
+        }
+
+                #slider figure {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                animation: 20s slider infinite;
+                }
+                    .image_container {
+                    width: 20%;
+                    float: left;
+                    max-height: 18rem;
+                    max-width: 100%;
+                    }
+                        .image_container img {
+                            object-fit: cover;
+                            height: 100%;
+                            margin-top: 0;
+                        }
+
+    #welcome_text {
+        top: 10%;
+    }
+
+    .card_selection {
+        grid-row: 3/5;
+        display: flex;
+        flex-flow: column;
+        justify-self: center;
+      }
+
+      .card {
+        height: 12rem;
+    }
+
+      .card__image-container {
+        height: 8rem;
+    }
+    
+    .card img {
+        object-fit: cover;
+        width: 20rem;
+        height: 60%;
+    }
+
+    footer {
+        background-color: burlywood;
+        grid-row: 5 / span 1;
+     }
+     
+}
+ 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+        /* Grelha base */
+        display: grid;
+        grid-template-rows: 3rem 12rem 50rem 50rem 3rem;
+        grid-template-columns: repeat(2, 2fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        width: 100%;
+    }
+    
+    header {
+        width: 100%;
+        background-color: #111;
+        z-index: 10;
+        display: inline-flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+        justify-content: space-between;
+    
+        grid-column: 1 / span 2;
+        grid-row: 1 / 2;
+    }
+    
+    /*logo*/
+    #logo {
+        min-height: 50px;
+        height: 100%;
+        margin-left: 2rem;
+    }
+    
+    /*menubar*/
+    nav {
+         width:50%; 
+        font-family: monospace;
+          display: flex;
+          background: violet;
+      }
+      
+    ul {
+          margin: 0;
+          padding: 0;
+          display: flex;
+      }
+      
+    li {
+          background: violet;
+          display: flex;
+          align-self: stretch;
+          transition-duration: 0.5s;
+          margin:0;
+          padding: 0 1rem;
+      }
+
+      
+    .dropdown {
+          background: orange;
+          visibility: hidden;
+          opacity: 0;
+          min-width: 5rem;
+          position: fixed;
+          transition: all 0.5s ease;
+          margin-top: 3rem;
+          margin-left: -1rem;
+      }
+    
+    #welcome_slider {
+        grid-column: 1 /span 2;
+        grid-row: 2 / 3;
+    }  
+        #slider {
+            overflow: hidden;
+           
+            width: 100%; /* estas duas influenciam o overlap do texto*/
+            height: auto;
+            
+            }
+                #slider figure {
+                position: relative;
+                width: 500%;
+                margin: 0;
+                left: 0;
+                animation: 20s slider infinite;
+                }
+                    .image_container {
+                    width: 20%;
+                    float: left;
+                    max-height: 12rem;
+                    }
+                        .image_container img {
+                            object-fit: cover;
+                            width: 100%;
+                            margin-top: -40%;
+                            opacity: 0.6;
+                        }
+
+            #welcome_text {
+                position: absolute;
+                left: 0;
+                top: 20%;
+                text-align: center;
+            }
+    
+          .card_selection {
+            grid-column: 1 /span 2;
+            grid-row: 3 / 5;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+          }
+        
+        .card {
+            background-color: #39393b;
+            transition: all 0.3s ease 0s;
+            margin: 1rem;
+            height: 20rem;
+        }
+        
+        .card__image-container {
+            height: 20rem;
+            
+        }
+        
+        .card img {
+            object-fit: cover;
+            width: 30rem;
+            height: 60%;
+        }
+        
+    footer {
+       background-color: burlywood;
+       grid-row: 5 / span 1;
+       grid-column: 1 / span 2;
+    }
+     
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+        /* Grelha base */
+        display: grid;
+        grid-template-rows: 3rem 12rem 30rem 30rem 3rem;
+        grid-template-columns: repeat(2, 2fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        width: 100%;
+    }
+    
+    nav {
+        width:40%;
+     }
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+    body {
+        /* Grelha base */
+        display: grid;
+        grid-template-rows: 3rem 12rem 30rem 30rem 3rem;
+        grid-template-columns: repeat(2, 2fr);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        width: 100%;
+    }
+    nav {
+        width:30%;
+     } 
+} 
